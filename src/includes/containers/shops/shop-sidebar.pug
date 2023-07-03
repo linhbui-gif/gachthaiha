@@ -1,7 +1,7 @@
 aside.shop-sidebar
     .widget.mb-35
         .widget-title.mb-25
-            h4.title Category
+            h4.title Danh mục sản phẩm
         .shop-cat-list
             ul
                 li
@@ -37,89 +37,31 @@ aside.shop-sidebar
                         | Sofas &amp; Sleeper Sofas
                         span 3
     .widget.mb-40
-        .widget-title.mb-25
-            h4.title Best Seller
-        .sidebar-product-list
+        .trending-product
+            h3.title Sản phẩm thịnh hành
             ul
-                li
-                    .thumb
-                        a(href='shop-details.html')
-                            img(src='assets/img/product/sidebar_product01.jpg' alt='img')
-                    .content
-                        h6.title
-                            a(href='shop-details.html') Appliance Aid Kitchen Stand
-                        .rating
-                            i.fa-solid.fa-star
-                            i.fa-solid.fa-star
-                            i.fa-solid.fa-star
-                            i.fa-solid.fa-star
-                            i.fa-solid.fa-star
-                        h4.price
-                            del $39.08
-                            |  $19.00
-                li
-                    .thumb
-                        a(href='shop-details.html')
-                            img(src='assets/img/product/sidebar_product02.jpg' alt='img')
-                    .content
-                        h6.title
-                            a(href='shop-details.html') One Washer Dryer
-                        .rating
-                            i.fa-solid.fa-star
-                            i.fa-solid.fa-star
-                            i.fa-solid.fa-star
-                            i.fa-solid.fa-star
-                            i.fa-solid.fa-star
-                        h4.price
-                            del $39.08
-                            |  $19.00
-                li
-                    .thumb
-                        a(href='shop-details.html')
-                            img(src='assets/img/product/sidebar_product03.jpg' alt='img')
-                    .content
-                        h6.title
-                            a(href='shop-details.html') Electric Blender Mixer
-                        .rating
-                            i.fa-solid.fa-star
-                            i.fa-solid.fa-star
-                            i.fa-solid.fa-star
-                            i.fa-solid.fa-star
-                            i.fa-solid.fa-star
-                        h4.price
-                            del $39.08
-                            |  $19.00
-    .widget.mb-40
-        .widget-title.price-title.mb-15
-            h4.title Filter by price :
-        .price_filter
-            #slider-range
-            .price_slider_amount
-                input.btn(type='submit' value='Filter')
-                span Price :
-                input#amount(type='text' name='price' placeholder='Add Your Price')
+                each item in [1,2,3,4,5,6,7,8]
+                    li.trending-product-item.mb-30
+                        .thumb
+                            a(href='shop-details.html')
+                                img(src='https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-60x60-trung-quoc-1566B07-qrc-300x300.jpg' alt='')
+                        .content
+                            h6.title
+                                a(href='shop-details.html') Gạch Ốp Lát 60×60 Trung Quốc 1566B07
+                            h4.price
+                                | 660.000₫ /m2
+
     .widget
-        .widget-title.mb-15
-            h4.title Product Brand
-        .shop-brand-list
+        .trending-product
+            h3.title Bạn vừa xem
             ul
-                li
-                    a(href='#')
-                        | New Arrivals
-                        i.fa-solid.fa-angles-right
-                li
-                    a(href='#')
-                        | Clothing &amp; Accessories
-                        i.fa-solid.fa-angles-right
-                li
-                    a(href='#')
-                        | Electronics
-                        i.fa-solid.fa-angles-right
-                li
-                    a(href='#')
-                        | Home Appliance
-                        i.fa-solid.fa-angles-right
-                li
-                    a(href='#')
-                        | Gaming Accessories
-                        i.fa-solid.fa-angles-right
+                each item in [1,2,3,4,5,6,7,8]
+                    li.trending-product-item.mb-30
+                        .thumb
+                            a(href='shop-details.html')
+                                img(src='https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-60x60-trung-quoc-1566B07-qrc-300x300.jpg' alt='')
+                        .content
+                            h6.title
+                                a(href='shop-details.html') Gạch Ốp Lát 60×60 Trung Quốc 1566B07
+                            h4.price
+                                | 660.000₫ /m2

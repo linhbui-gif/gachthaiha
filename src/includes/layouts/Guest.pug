@@ -36,6 +36,20 @@ html
         include ../containers/header/header-v1.pug
         main
            block pages
+           section.newsletter-area.pb-90
+                   .container
+                       .row
+                           .col-lg-12
+                               .newsletter-wrap
+                                   .newsletter-content
+                                       h2.title
+                                           | Để lại Email của bạn để được tư vấn !
+                                       p Get 10% off new collection special Investigationes demonstraverunt
+                                   .newsletter-form
+                                       form(action='#')
+                                           input(type='text' placeholder='Your email here...')
+                                           button(type='submit') Subscribe
+
         include ../containers/footer/footer-v1.pug
         block script
         // JS here

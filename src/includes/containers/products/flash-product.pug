@@ -3,250 +3,29 @@ section.flash-product-area.pt-90.pb-60
     .container
         .row.justify-content-center
             .col-xl-3.col-lg-4.col-md-8.col-sm-10
-                .slider-add-banner.banner-active.mb-45
-                    .add-banner
-                        .add-banner-img
-                            a(href='shop.html')
-                                img(src='assets/img/images/add_banner_slider01.jpg' alt='')
-                        .add-banner-content
-                            span 35% discount
-                            h2.title Smart Phone
-                            p Reference site about
-                            a.btn(href='shop.html') shop now
-                    .add-banner
-                        .add-banner-img
-                            a(href='shop.html')
-                                img(src='assets/img/images/add_banner_slider01.jpg' alt='')
-                        .add-banner-content
-                            span 35% discount
-                            h2.title Smart Phone
-                            p Reference site about
-                            a.btn(href='shop.html') shop now
-                    .add-banner
-                        .add-banner-img
-                            a(href='shop.html')
-                                img(src='assets/img/images/add_banner_slider01.jpg' alt='')
-                        .add-banner-content
-                            span 35% discount
-                            h2.title Smart Phone
-                            p Reference site about
-                            a.btn(href='shop.html') shop now
                 .trending-product
-                    h3.title Trending Products
+                    h3.title Sản phẩm thịnh hành
                     ul
-                        li.trending-product-item.mb-30
-                            .thumb
-                                a(href='shop-details.html')
-                                    img(src='assets/img/product/trending_product01.png' alt='')
-                            .content
-                                h6.title
-                                    a(href='shop-details.html') Morales Ultimate Launch
-                                h4.price
-                                    | $09.08
-                                    del $29.08
-                                .content-bottom
-                                    ul
-                                        li 1k+ Orders ~
-                                        li
-                                            i.fa-solid.fa-star
-                                            | 4.7
-                        li.trending-product-item.mb-30
-                            .thumb
-                                a(href='shop-details.html')
-                                    img(src='assets/img/product/trending_product02.png' alt='')
-                            .content
-                                h6.title
-                                    a(href='shop-details.html') Lixada Fishing Breathable
-                                h4.price
-                                    | $14.08
-                                    span -35%
-                                .content-bottom
-                                    ul
-                                        li 1.5k+ Orders ~
-                                        li
-                                            i.fa-solid.fa-star
-                                            | 4.8
-                        li.trending-product-item.mb-30
-                            .thumb
-                                a(href='shop-details.html')
-                                    img(src='assets/img/product/trending_product03.png' alt='')
-                            .content
-                                h6.title
-                                    a(href='shop-details.html') Morales Ultimate Launch
-                                h4.price
-                                    | $18.08
-                                    span -25%
-                                .content-bottom
-                                    ul
-                                        li 2k+ Orders ~
-                                        li
-                                            i.fa-solid.fa-star
-                                            | 4.5
-                        li.trending-product-item.mb-30
-                            .thumb
-                                a(href='shop-details.html')
-                                    img(src='assets/img/product/trending_product04.png' alt='')
-                            .content
-                                h6.title
-                                    a(href='shop-details.html') Winter Gloves Mens
-                                h4.price
-                                    | $19.08
-                                    span -20%
-                                .content-bottom
-                                    ul
-                                        li 3k+ Orders ~
-                                        li
-                                            i.fa-solid.fa-star
-                                            | 4.9
+                        each item in [1,2,3,4,5,6,7,8]
+                            li.trending-product-item.mb-30
+                                .thumb
+                                    a(href='shop-details.html')
+                                        img(src='https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-60x60-trung-quoc-1566B07-qrc-300x300.jpg' alt='')
+                                .content
+                                    h6.title
+                                        a(href='shop-details.html') Gạch Ốp Lát 60×60 Trung Quốc 1566B07
+                                    h4.price
+                                        | 660.000₫ /m2
+
             .col-xl-9.col-lg-8.col-md-12
-                .add-banner-thumb.mb-55
-                    a(href='#')
-                        img(src='assets/img/images/add_banner_img02.jpg' alt='')
+
                 .row
-                    .col-lg-6.col-md-6
+                    .col-lg-12.col-md-12
                         .section-title.title-style-two.mb-30
-                            h4.title Flash Sale Today!
-                    .col-lg-6.col-md-6
-                        .product-menu-nav
-                            button.active(data-filter='*') Flash
-                            button(data-filter='.cat-one') Popular
-                            button(data-filter='.cat-two') Top Rate
+                            h4.title SẢN PHẨM MỚI NHẤT
                 .flash-product-item-wrap
-                    .row.flash-isotope-active
-                        .col-xl-3.col-lg-4.col-md-6.col-sm-6.grid-item.grid-sizer.cat-two
-                            .product-item-two.mb-30
-                                .product-thumb
-                                    a(href='shop-details.html')
-                                        img(src='assets/img/product/flash_product01.jpg' alt='')
-                                .product-content
-                                    h6.title
-                                        a(href='shop-details.html') Morales Ultimate Launch
-                                    h4.price
-                                        | $29.08
-                                        span -35%
-                                    .content-bottom
-                                        ul
-                                            li 1k+ Orders ~
-                                            li
-                                                i.fa-solid.fa-star
-                                                | 4.9
-                        .col-xl-3.col-lg-4.col-md-6.col-sm-6.grid-item.grid-sizer.cat-two.cat-one
-                            .product-item-two.mb-30
-                                .product-thumb
-                                    a(href='shop-details.html')
-                                        img(src='assets/img/product/flash_product02.jpg' alt='')
-                                .product-content
-                                    h6.title
-                                        a(href='shop-details.html') Lixada Fishing Breathable
-                                    h4.price
-                                        | $25.08
-                                        span -34%
-                                    .content-bottom
-                                        ul
-                                            li 1.5k+ Orders ~
-                                            li
-                                                i.fa-solid.fa-star
-                                                | 4.2
-                        .col-xl-3.col-lg-4.col-md-6.col-sm-6.grid-item.grid-sizer.cat-one
-                            .product-item-two.mb-30
-                                .product-thumb
-                                    a(href='shop-details.html')
-                                        img(src='assets/img/product/flash_product03.jpg' alt='')
-                                .product-content
-                                    h6.title
-                                        a(href='shop-details.html') Winter Gloves Mens
-                                    h4.price
-                                        | $29.08
-                                        span -20%
-                                    .content-bottom
-                                        ul
-                                            li 2k+ Orders ~
-                                            li
-                                                i.fa-solid.fa-star
-                                                | 4.8
-                        .col-xl-3.col-lg-4.col-md-6.col-sm-6.grid-item.grid-sizer.cat-one.cat-two
-                            .product-item-two.mb-30
-                                .product-thumb
-                                    a(href='shop-details.html')
-                                        img(src='assets/img/product/flash_product04.jpg' alt='')
-                                .product-content
-                                    h6.title
-                                        a(href='shop-details.html') Fashion High scalding
-                                    h4.price
-                                        | $28.08
-                                        span -40%
-                                    .content-bottom
-                                        ul
-                                            li 2.5k+ Orders ~
-                                            li
-                                                i.fa-solid.fa-star
-                                                | 4.7
-                        .col-xl-3.col-lg-4.col-md-6.col-sm-6.grid-item.grid-sizer.cat-two.cat-one
-                            .product-item-two.mb-30
-                                .product-thumb
-                                    a(href='shop-details.html')
-                                        img(src='assets/img/product/flash_product05.jpg' alt='')
-                                .product-content
-                                    h6.title
-                                        a(href='shop-details.html') Morales Ultimate Launch
-                                    h4.price
-                                        | $29.08
-                                        span -35%
-                                    .content-bottom
-                                        ul
-                                            li 1.5k+ Orders ~
-                                            li
-                                                i.fa-solid.fa-star
-                                                | 4.4
-                        .col-xl-3.col-lg-4.col-md-6.col-sm-6.grid-item.grid-sizer.cat-two
-                            .product-item-two.mb-30
-                                .product-thumb
-                                    a(href='shop-details.html')
-                                        img(src='assets/img/product/flash_product06.jpg' alt='')
-                                .product-content
-                                    h6.title
-                                        a(href='shop-details.html') Lixada Fishing Breathable
-                                    h4.price
-                                        | $27.08
-                                        span -50%
-                                    .content-bottom
-                                        ul
-                                            li 1.5k+ Orders ~
-                                            li
-                                                i.fa-solid.fa-star
-                                                | 4.3
-                        .col-xl-3.col-lg-4.col-md-6.col-sm-6.grid-item.grid-sizer.cat-one
-                            .product-item-two.mb-30
-                                .product-thumb
-                                    a(href='shop-details.html')
-                                        img(src='assets/img/product/flash_product07.jpg' alt='')
-                                .product-content
-                                    h6.title
-                                        a(href='shop-details.html') Elastic Summer Newborn
-                                    h4.price
-                                        | $9.08
-                                        span -30%
-                                    .content-bottom
-                                        ul
-                                            li 5.5k+ Orders ~
-                                            li
-                                                i.fa-solid.fa-star
-                                                | 4.5
-                        .col-xl-3.col-lg-4.col-md-6.col-sm-6.grid-item.grid-sizer.cat-two
-                            .product-item-two.mb-30
-                                .product-thumb
-                                    a(href='shop-details.html')
-                                        img(src='assets/img/product/flash_product08.jpg' alt='')
-                                .product-content
-                                    h6.title
-                                        a(href='shop-details.html') Fashion High scalding
-                                    h4.price
-                                        | $29.08
-                                        span -30%
-                                    .content-bottom
-                                        ul
-                                            li 3.3k+ Orders ~
-                                            li
-                                                i.fa-solid.fa-star
-                                                | 4.5
+                    .row
+                        each item in [1,2,3,4,5,6,7,8,9,10]
+                            .col-xl-3.col-lg-4.col-md-6.col-sm-6
+                                include ../../components/shop/product-item.pug
 // flash-product-area-end

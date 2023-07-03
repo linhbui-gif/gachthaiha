@@ -4,13 +4,14 @@ section.blog-area.pt-55.pb-60
         .row.mb-40
             .col-lg-6.col-md-6
                 .section-title
-                    h2.title Most Popular Blog
+                    h2.title TIN TỨC MỚI
             .col-lg-6.col-md-6
                 .view-btn.text-end
                     a(href='blog.html')
-                        | View All Post
+                        | Xem tất cả bài viết
                         i.fa-solid.fa-angle-right
         .row.justify-content-center
-            .col-xl-4.col-lg-6.col-md-6.col-sm-9
-                include ../../components/blogs/blog-item.pug
+            each item in [1,2,3,4,5,6]
+                .col-xl-4.col-lg-6.col-md-6.col-sm-9
+                    include ../../components/blogs/blog-item.pug
 // blog-area-end

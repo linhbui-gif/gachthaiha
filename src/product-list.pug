@@ -1,0 +1,41 @@
+extends includes/layouts/Layout-v2
+
+block pageV2
+    include includes/containers/breadcrumb/breadcrumb
+    // shop-area
+    .shop-area.pt-90.pb-90
+        .container
+            .row.justify-content-center
+                .col-xl-3.col-lg-4.col-md-8.col-sm-10.order-2.order-lg-0
+                    include includes/containers/shops/shop-sidebar
+                .col-xl-9.col-lg-8
+                    .shop-top-wrap.mb-35
+                        .shop-top-left
+                            h5.title Shop
+                        .shop-top-right
+                            form(action='#')
+                                label(for='shortBy') sort By
+                                select#shortBy.form-select(name='select' aria-label='Default select example')
+                                    option(value='') Sorting
+                                    option Free Shipping
+                                    option Best Match
+                                    option Newest Item
+                                    option Size A - Z
+
+                    .row
+                        each item in [1,2,3,4,5,6,7,8,9]
+                            .col-xl-4.col-lg-6.col-md-6.col-sm-8
+                                .shop-product-item.mb-30
+                                    .shop-thumb
+                                        a(href='shop-details.html')
+                                            img(src='https://gachtot.vn/wp-content/uploads/2023/03/9887-300x300.jpg' alt='img')
+                                        span New
+                                    .shop-content
+                                        h2.title
+                                            a(href='shop-details.html') Gạch nhập khẩu Trung Quốc 40×80 ghi sáng chớp trắng HM9887A
+                                        .content-bottom
+                                            h4.price 380.000đ
+                                            p
+                                                span -35%
+
+    // shop-area-end

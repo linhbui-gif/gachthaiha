@@ -1,37 +1,35 @@
-// header-area
 header
     .header-top-area
         .container
             .row.align-items-center
                 .col-md-6
                     .header-top-left
-                        a(href='#') Welcome! Free Shipping on orders over US$29.99
+                        a(href='#') GẠCH ỐP LÁT THÁI HÀ
                 .col-md-6
                     .header-top-right
                         ul
                             li
-                                a(href='become-vendor.html') Become a Vendor
+                                a(href='#') HotLine : 0904506621
                             li
-                                a(href='blog.html') Blog
+                                a(href='#') Tài khoản ngân hàng
                             li
-                                a(href='contact.html') Contact Us
+                                a(href='#') Hỗ trợ
+                            li
+                                a(href='#') Liên hệ
+                            li
+                                a(href='#') Báo giá
     .header-search-area
         .container
             .row.align-items-center
                 .col-xl-2.col-lg-3
                     .logo
-                        a(href='index.html')
-                            img(src='assets/img/logo/logo.png' alt='')
+                        a(href='/')
+                            img(src='https://gachtot.vn/wp-content/uploads/2018/04/gach-tot-vn.png' alt='')
                 .col-xl-10.col-lg-9
                     .d-block.d-sm-flex.align-items-center.justify-content-end
                         .header-search-wrap
                             form(action='#')
                                 input(type='text' placeholder='Search for product...')
-                                select.custom-select
-                                    option(selected='') All Categories
-                                    option Women&apos;s Clothing
-                                    option Men&apos;s Clothing
-                                    option Luggage &amp; Bags
                                 button
                                     i.fas.fa-search
                         .header-action
@@ -39,119 +37,7 @@ header
                                 li.header-shop
                                     a(href='#')
                                         i.flaticon-shopping-bag
-                                        | Cart
+                                        | Giỏ hàng
                                         span.cart-count 0
-    #sticky-header.menu-area
-        .container
-            .row
-                .col-12
-                    .mobile-nav-toggler
-                        i.fas.fa-bars
-                    .menu-wrap
-                        nav.menu-nav
-                            .logo.d-none
-                                a(href='index.html')
-                                    img(src='assets/img/logo/w_logo.png' alt='')
-                            .header-category
-                                a.cat-toggle(href='#')
-                                    i.fas.fa-bars
-                                    | Browse Categories
-                                    i.fas.fa-angle-down
-                                ul.category-menu
-                                    each megaItem in dataMegaMenu
-                                        li
-                                            a(href=`${megaItem.link}`)
-                                                i(class=`flaticon-${megaItem.icon}`)
-                                                | Health and Beauty
-                                        li.menu-item-has-children
-                                            a(href=`${megaItem.link}`)
-                                                i(class=`flaticon-${megaItem.icon}`)
-                                                | Smartphone &amp; Table
-                                            ul.megamenu
-                                                each megaItemColumn in megaItem
-                                                    li.sub-column-item
-                                                        a(href=`${megaItemColumn.children.link}`)=megaItemColumn.children.name
-                                                        ul
-                                                            each megaItemColumnItem in megaItemColumn.children.columns
-                                                                li
-                                                                    a(href=`${megaItemColumnItem.link}`)=megaItemColumnItem.name
-                            .navbar-wrap.main-menu.d-none.d-lg-flex
-                                ul.navigation
-                                    li.active.menu-item-has-children
-                                        a(href='#') Home
-                                        ul.submenu
-                                            li.active
-                                                a(href='index.html') Home One
-                                            li
-                                                a(href='index-2.html') Home Two
-                                            li
-                                                a(href='index-3.html') Home Three
-                                    li.menu-item-has-children
-                                        a(href='#') SHOP
-                                        ul.submenu
-                                            li
-                                                a(href='shop.html') Our Shop
-                                            li
-                                                a(href='shop-details.html') shop Details
-                                    li
-                                        a(href='promotion.html') PROMOTION
-                                    li.menu-item-has-children
-                                        a(href='#') BLOG
-                                        ul.submenu
-                                            li
-                                                a(href='blog.html') Our blog
-                                            li
-                                                a(href='blog-details.html') blog Details
-                                    li
-                                        a(href='index-3.html') SPECIAL
-                                    li.menu-item-has-children
-                                        a(href='#') PAGES
-                                        ul.submenu
-                                            li
-                                                a(href='become-vendor.html') become a vendor
-                                            li
-                                                a(href='vendor-profile.html') vendor Profile
-                                            li
-                                                a(href='vendor-setting.html') vendor setting
-                                            li
-                                                a(href='coupon.html') coupon list
-                                            li
-                                                a(href='contact.html') contact
-                                    li
-                                        a(href='vendor-list.html') vendor Store List
-                            .header-action.d-none.d-md-block
-                                ul
-                                    li.header-btn
-                                        a(href='shop.html')
-                                            | Super Discount
-                                            img(src='assets/img/images/discount_shape.png' alt='')
-                    // Mobile Menu
-                    .mobile-menu
-                        nav.menu-box
-                            .close-btn
-                                i.fa-solid.fa-xmark
-                            .nav-logo
-                                a(href='index.html')
-                                    img(src='assets/img/logo/logo.png' alt='' title='')
-                            .menu-outer
-                                // Here Menu Will Come Automatically Via Javascript / Same Menu as in Header
-                            .social-links
-                                ul.clearfix
-                                    li
-                                        a(href='#')
-                                            span.fab.fa-twitter
-                                    li
-                                        a(href='#')
-                                            span.fab.fa-facebook-f
-                                    li
-                                        a(href='#')
-                                            span.fab.fa-pinterest-p
-                                    li
-                                        a(href='#')
-                                            span.fab.fa-instagram
-                                    li
-                                        a(href='#')
-                                            span.fab.fa-youtube
-                    .menu-backdrop
-                    // End Mobile Menu
+    include ./menu-area-v1
 // header-area-end

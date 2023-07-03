@@ -1,0 +1,92 @@
+#sticky-header.menu-area
+    .container
+        .row
+            .col-12
+                .mobile-nav-toggler
+                    i.fas.fa-bars
+                .menu-wrap
+                    nav.menu-nav
+                        .logo.d-none
+                            a(href='/')
+                                img(src='https://gachtot.vn/wp-content/uploads/2018/04/gach-tot-vn.png' alt='')
+                        .header-category
+                            a.cat-toggle(href='#')
+                                i.fas.fa-bars
+                                | Browse Categories
+                                i.fas.fa-angle-down
+                            ul.category-menu
+                                each megaItem in dataMegaMenu
+                                    li
+                                        a(href=`${megaItem.href}`)
+                                            i(class=`flaticon-${megaItem.icon}`)
+                                            | Thương Hiệu
+                                    li.menu-item-has-children
+                                        a(href=`${megaItem.href}`)
+                                            i(class=`flaticon-${megaItem.icon}`)
+                                            | Gạch nát nền
+                                        ul.megamenu
+                                            li.sub-column-item
+                                                a(href=`${megaItem.children.href}`)=megaItem.children.name
+                                                ul
+                                                    each megaItemColumnItem in megaItem.children.columns
+                                                        li
+                                                            a(href=`${megaItemColumnItem.href}`)=megaItemColumnItem.name
+                                            li.sub-column-item
+                                                a(href=`${megaItem.children.href}`)=megaItem.children.name
+                                                ul
+                                                    each megaItemColumnItem in megaItem.children.columns
+                                                        li
+                                                            a(href=`${megaItemColumnItem.href}`)=megaItemColumnItem.name
+                                            li.sub-column-item
+                                                a(href=`${megaItem.children.href}`)=megaItem.children.name
+                                                ul
+                                                    each megaItemColumnItem in megaItem.children.columns
+                                                        li
+                                                            a(href=`${megaItemColumnItem.href}`)=megaItemColumnItem.name
+                        .navbar-wrap.main-menu.d-none.d-lg-flex
+                            ul.navigation
+                                li.active.menu-item-has-children
+                                    a(href='#') Trang chủ
+                                li.menu-item-has-children
+                                    a(href='#') Giới thiệu
+                                li.menu-item-has-children
+                                    a(href='product-list.html') Danh sách sản phẩm
+                                li.menu-item-has-children
+                                    a(href='#') Tin Tức
+                                li
+                                    a(href='index-3.html') Liên Hệ
+                        .header-action.d-none.d-md-block
+                            ul
+                                li.header-btn
+                                    a(href='#')
+                                        | Báo giá
+                                        img(src='assets/img/images/discount_shape.png' alt='')
+                // Mobile Menu
+                .mobile-menu
+                    nav.menu-box
+                        .close-btn
+                            i.fa-solid.fa-xmark
+                        .nav-logo
+                            a(href='index.html')
+                                img(src='assets/img/logo/logo.png' alt='' title='')
+                        .menu-outer
+                            // Here Menu Will Come Automatically Via Javascript / Same Menu as in Header
+                        .social-links
+                            ul.clearfix
+                                li
+                                    a(href='#')
+                                        span.fab.fa-twitter
+                                li
+                                    a(href='#')
+                                        span.fab.fa-facebook-f
+                                li
+                                    a(href='#')
+                                        span.fab.fa-pinterest-p
+                                li
+                                    a(href='#')
+                                        span.fab.fa-instagram
+                                li
+                                    a(href='#')
+                                        span.fab.fa-youtube
+                .menu-backdrop
+                // End Mobile Menu
