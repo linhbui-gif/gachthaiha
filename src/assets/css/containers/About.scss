@@ -1,0 +1,57 @@
+.About {
+  padding: 0 0 3rem 0;
+  transform: translateY(-6rem);
+
+  &-title {
+    margin-bottom: 2rem;
+
+    h2 {
+      text-align: center;
+      font-size: 3.2rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+  }
+
+  &-wrapper {
+    row-gap: 2rem;
+    column-gap: 2rem;
+
+    &-item {
+      flex: 1;
+
+      &:first-child {
+        flex: 1.2;
+      }
+
+      @media (max-width: 991px) {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+      }
+    }
+  }
+
+  &-image {
+    img {
+      width: 100%;
+    }
+  }
+
+  &-description {
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+
+  &-btns {
+    row-gap: 2.4rem;
+    column-gap: 2.4rem;
+    margin-bottom: 1.6rem;
+
+    .Button {
+      flex: 1;
+    }
+  }
+}

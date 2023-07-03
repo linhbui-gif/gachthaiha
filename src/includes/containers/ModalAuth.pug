@@ -1,0 +1,43 @@
+.ModalAuth.Modal#ModalAuth
+  .Modal-overlay 
+  .Modal-main(style="max-width: 107.4rem;")
+    .Modal-body 
+      .ModalAuth-wrapper.flex 
+        .ModalAuth-wrapper-item
+          form(action="#").ModalAuth-form.flex.flex-col
+            .ModalAuth-form-logo 
+              img(src="./assets/images/logo.svg", alt="")
+
+            h3.ModalAuth-form-title Đăng nhập
+
+            +Input({ placeholder: 'Nhập email', size: 'small', bordered: true })
+            +Input({ placeholder: 'Mật khẩu', size: 'small', bordered: true })
+
+            a(href="#").ModalAuth-form-forgot-password Quên mật khẩu
+
+            +Button({ title: 'Đăng nhập', className: 'secondary', bordered: true })
+
+            a(href="#").ModalAuth-form-no-account
+              |Chưa có tài khoản?
+              strong Đăng ký
+
+        .ModalAuth-wrapper-item
+          .owl-carousel#ModalAuth-carousel.ModalAuth-carousel
+            each item in [1,2,3]
+              .item
+                .ModalAuth-carousel-item.flex.flex-col.items-center.justify-center
+                  .ModalAuth-carousel-item-bg 
+                    img(src="./assets/images/image-modal-auth.png", alt="")
+                  
+                  .ModalAuth-carousel-item-title.flex.items-center.justify-center
+                    h2 Chào mừng tới
+                    h1 KingStudy
+
+                  .ModalAuth-carousel-item-info
+                    .ModalAuth-content.style-content.text-center
+                      p KingStudy là đơn vị tư vấn, kết nối du học với 10 năm kinh nghiệm. Khi đến với King Study, bạn sẽ được hỗ trợ về thông tin về du học, học bổng và hướng dẫn hồ sơ, thủ tục.
+                      ul 
+                        li 10 năm kinh nghiệm tư vấn và kết nối
+                        li Tư vấn tận tình, chi tiết
+                        li Làm việc chuyên nghiệp, uy tín, có lộ trình rõ ràng
+

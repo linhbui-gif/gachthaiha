@@ -1,0 +1,8 @@
+mixin Input({ className = '', type = 'text', size = 'middle', placeholder = '', bordered = false })
+  .Input(class=`${className} ${size} ${bordered ? 'bordered' : ''}`)
+    input(type=`${type}` placeholder=`${placeholder}`).Input-control
+
+    if (type === 'date')
+      .Input-date-icon 
+        img(src="./assets/icons/icon-calendar.svg", alt="")
+        

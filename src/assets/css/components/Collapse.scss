@@ -1,0 +1,60 @@
+.Collapse {
+  position: relative;
+  overflow: hidden;
+  border-radius: .5rem;
+  box-shadow: 0px .4rem 2rem rgba($black, 0.1);
+
+  &.active {
+    .Collapse {
+      &-body {
+        padding: 1.6rem 3.2rem;
+        max-height: 100vh;
+        overflow: auto;
+      }
+
+      &-icon {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &-header {
+    position: relative;
+    padding: 2rem 3.2rem;
+    border-bottom: 1px solid $bon-jour;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: .6rem;
+      border-radius: .5rem;
+      background: $backgroundBlueGradient;
+      height: 100%;
+      content: '';
+    }
+  }
+
+  &-body {
+    padding: 0rem 3.2rem;
+    max-height: 0;
+    transition: 0.5s ease;
+    overflow: hidden;
+  }
+
+  &-title {
+    margin-bottom: 0 !important;
+  }
+
+  &-icon {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    pointer-events: none;
+    width: 2.4rem;
+    height: 2.4rem;
+    transition: $common-transition;
+    @include centerOriginImage;
+  }
+}

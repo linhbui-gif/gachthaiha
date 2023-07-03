@@ -1,0 +1,18 @@
+mixin ButtonChildren({ title, icon })
+  if (icon)
+    span.Button-control-icon
+      img(src=`${icon}`, alt="")
+
+  if (title)
+    span.Button-control-title
+      = title
+
+mixin Button({ className = '', type = 'button', size = 'middle', title, icon, reverse, link, bordered = false, dataModalId })
+  .Button(class=`${className} ${reverse ? 'reverse' : ''} ${size} ${bordered ? 'bordered' : ''}` data-modal-id=`${dataModalId || ''}`)
+    if link
+      a(href=`${link}`).Button-control.flex.items-center.justify-center
+        +ButtonChildren({ title, icon })
+
+    else
+      button(type=`${type}`).Button-control.flex.items-center.justify-center
+        +ButtonChildren({ title, icon })

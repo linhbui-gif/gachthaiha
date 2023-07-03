@@ -1,0 +1,126 @@
+.Header {
+  background: $white;
+  display: none;
+ @media (max-width: 992px) {
+   display: block;
+ }
+  &-wrapper {
+    padding: 2.4rem 0;
+    @media (max-width: 992px) {
+      padding: 1rem 0;
+    }
+  }
+
+  &-logo {
+    display: block;
+    max-width: 26rem;
+
+    @media (max-width: 575px) {
+      max-width: 20rem;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-search {
+    position: relative;
+    flex: 1;
+    max-width: 67rem;
+
+    @media (max-width: 991px) {
+      display: none !important;
+    }
+
+    &-control {
+      outline: none;
+      border: 1px solid $silver;
+      border-radius: .5rem;
+      font-size: 1.8rem;
+      width: 100%;
+      padding: 1rem calc(1.5rem + 0.8rem + 3.2rem) 1rem 1.5rem;
+
+      &::placeholder {
+        color: $scorpion;
+      }
+    }
+
+    &-button {
+      width: 3.2rem;
+      height: 3.2rem;
+      border-radius: .5rem;
+      background: $backgroundBlueGradient;
+      display: flex;
+      position: absolute;
+      top: 50%;
+      right: 0.8rem;
+      transform: translateY(-50%);
+      cursor: pointer;
+      outline: none;
+      border: none;
+
+      img {
+        width: 1.4rem;
+        height: 1.4rem;
+        margin: auto;
+      }
+    }
+  }
+
+  &-actions {
+    column-gap: 6rem;
+
+    @media (max-width: 991px) {
+      column-gap: 2.4rem;
+    }
+
+    @media (max-width: 575px) {
+      column-gap: 0.8rem;
+    }
+
+    &-item {
+      &.menu {
+        display: none;
+
+        @media (max-width: 991px) {
+          display: block;
+          cursor: pointer;
+        }
+      }
+
+      &.account {
+        position: relative;
+        cursor: pointer;
+      }
+
+      &-icon {
+        width: 3.5rem;
+        height: 3.5rem;
+        margin: 0 auto .5rem;
+
+        @include centerScaleImage;
+      }
+
+      &-label {
+        text-align: center;
+        font-size: 1.6rem;
+        color: $black;
+
+        img {
+          width: 1rem;
+          margin-left: .8rem;
+        }
+
+        span {
+          cursor: pointer;
+          margin: 0 .2rem;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.ModalFileSavedSuccess.Modal#ModalFileSavedSuccess
+  .Modal-overlay 
+  .Modal-main(style="max-width: 62.8rem;")
+    .Modal-header 
+      |THông báo
+
+    .Modal-body 
+      .style-content 
+        p.text-center Hồ sơ của bạn đã được lưu lại.
+
+        .ModalFileSavedSuccess-form-submit.flex.justify-between(style="column-gap: 2rem;")
+          .ModalFileSavedSuccess-form-submit-item(style="flex: 1")
+            +Button({ title: 'Đồng ý', size: 'small', className: 'secondary Modal-close' })

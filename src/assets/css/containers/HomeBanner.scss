@@ -1,0 +1,12 @@
+.HomeBanner {
+  &-carousel {
+    &-item {
+      @include centerScaleImage;
+      height: 72rem;
+
+      @media (max-width: 575px) {
+        height: 52rem;
+      }
+    }
+  }
+}

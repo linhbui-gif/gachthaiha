@@ -1,0 +1,71 @@
+.contacts{
+  padding: 10rem 0;
+  //background: linear-gradient(180deg,#f15e2b 0,#faa93d 100%);
+  &-left{
+    .Title-component{
+             .TitleHeader{
+               span{
+                 //color: white;
+                 font-size: 4rem;
+                 font-weight: 600;
+               }
+             }
+    }
+  }
+  &-right{}
+}
+.hiring{
+  &-related{
+    &-list{
+      &-item{
+         &-link{
+           font-size: 1.4rem;
+           opacity: .5;
+           display: block;
+           color: $white;
+           &:hover{
+             color: white;
+           }
+           &:last-child{
+             font-weight: 700;
+             opacity: 1;
+             font-size: 1.6rem;
+           }
+         }
+      }
+    }
+  }
+}
+.product-banner{
+  padding-bottom: 5rem;
+  img{
+    width: 100%;
+  }
+  &-row{
+    background: #292845;
+    margin: 5rem 0;
+    flex-wrap: wrap;
+    &.resever{
+      .product-banner-col{
+        &:first-child{
+          order: 2;
+        }
+        &:last-child{
+          order: 1;
+        }
+      }
+    }
+  }
+  &-col{
+    width: 50%;
+    @media (max-width: 992px) {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  }
+  &-game{
+    img{
+      width: 20%;
+    }
+  }
+}

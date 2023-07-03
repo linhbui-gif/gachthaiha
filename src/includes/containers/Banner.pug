@@ -1,0 +1,9 @@
+mixin BannerCommon({ subtitle,title, className, desc, isHiring })
+   .Banner(class=`${className ? className : ''}`)
+       .container
+           .Banner-content
+              a.Banner-content-subTitle(href="#" style="color:black;")=subtitle
+              .Banner-content-title=title
+              if desc
+                 p.Banner-content-desc=desc
+

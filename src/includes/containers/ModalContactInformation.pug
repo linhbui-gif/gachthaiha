@@ -1,0 +1,26 @@
+.ModalContactInformation.Modal#ModalContactInformation
+  .Modal-overlay 
+  .Modal-main 
+    .Modal-header 
+      |Thông tin liên hệ
+      .Modal-close.Modal-header-close
+        img(src="./assets/icons/icon-close.svg", alt="")
+
+    .Modal-body 
+      form(action="#").ModalContactInformation-form
+        .ModalContactInformation-form-control.flex.flex-wrap
+          .ModalContactInformation-form-item
+            +Input({ placeholder: 'Tên của bạn', size: 'small', bordered: true })
+          .ModalContactInformation-form-item
+            +Select({ placeholder: 'Quốc gia du học', size: 'small', bordered: true })
+          .ModalContactInformation-form-item
+            +Input({ placeholder: 'Số điện thoại', size: 'small', bordered: true })
+          .ModalContactInformation-form-item
+            +Select({ placeholder: 'Bậc học', size: 'small', bordered: true })
+          .ModalContactInformation-form-item
+            +Input({ placeholder: 'Email', size: 'small', bordered: true })
+          .ModalContactInformation-form-item
+            +Select({ placeholder: 'Ielts', size: 'small', bordered: true })
+
+        .ModalContactInformation-form-submit.flex.justify-center
+          +Button({ title: 'Gửi thông tin', size: 'small', className: 'secondary' })

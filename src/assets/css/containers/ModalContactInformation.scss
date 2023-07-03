@@ -1,0 +1,28 @@
+.ModalContactInformation {
+  &-form {
+    &-control {
+      margin: 0 -1rem;
+      row-gap: 2rem;
+    }
+
+    &-item {
+      padding: 0 1rem;
+      flex: 0 0 50%;
+      max-width: 50%;
+
+      @media (max-width: 768px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+
+    &-submit {
+      margin-top: 3.2rem;
+
+      .Button {
+        max-width: 39rem;
+        width: 100%;
+      }
+    }
+  }
+}

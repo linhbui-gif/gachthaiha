@@ -1,0 +1,20 @@
+.Compare-school.show
+    .container
+        .Compare-school-wrapper.flex.items-center.justify-between.flex-wrap
+            .Compare-school-wrapper-name University Comparison
+            ul.Compare-school-wrapper-logo.flex.items-center
+                each items in [1,2,3]
+                    li.Compare-school-wrapper-logo-item
+                        .Compare-school-wrapper-logo-item-remove
+                            svg(xmlns='http://www.w3.org/2000/svg', width='24', height='24', viewBox='0 0 24 24')
+                                g(fill='none', fill-rule='evenodd')
+                                    polygon(points='0 0 24 0 24 24 0 24')
+                                    path(fill='currentColor', fill-rule='nonzero', d='M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 Z M17,13 L7,13 L7,11 L17,11 L17,13 Z')
+                        .Compare-school-wrapper-logo-item-images
+                             img(src="https://marvel-b1-cdn.bc0a.com/f00000000290162/images.ctfassets.net/2htm8llflwdx/5OTnsYnI5Ay05RcS11DMSl/aad950f6c7d922e8d81b3e28723b7efc/AdelphiNY_Wordmark_PMS7549c.png?fit=thumb&w=150")
+                li.Compare-school-wrapper-logo-item
+                    .Compare-school-wrapper-logo-item-images
+                        .Compare-school-wrapper-logo-item-images-nothing
+            .Compare-school-wrapper-button
+                +Button({ title: 'So sánh', bordered: true })
+

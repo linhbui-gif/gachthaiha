@@ -1,0 +1,43 @@
+extends includes/layouts/Guest.pug
+
+block pages
+    section.product-banner
+       .container
+           .row
+               .col-12
+                   a(href="#")
+                       img(src="https://cscmobi.com/wp-content/uploads/2020/08/csc_header-Image-scaled.jpg")
+           .product-banner-row.flex.items-center
+               .product-banner-col
+                   .product-banner-game
+                       +CardItem({
+                           src: 'https://cscmobi.com/wp-content/uploads/2020/08/icon_p8-160x160.png',
+                           width: "160",
+                           className:'vertical text-center',
+                           title:'Cooking Marina',
+                           desc:'fast restaurant cooking games',
+                       })
+                       .product-banner-game-btn.flex.items-center.justify-center
+                           +Button({title: 'Download', size: 'small', link:'#'})
+               .product-banner-col
+                   img(src="https://cscmobi.com/wp-content/uploads/2020/08/p8_feature-e1598518298712.png")
+           .row
+               .col-12
+                   .owl-carousel.product-banner-carousel#product-banner-carousel
+                       each item, index in [1,2,3,4,5,6]
+                           .item
+                               img(src="https://cscmobi.com/wp-content/uploads/2020/08/p23_sc2-1920x1080-1.jpg")
+           .product-banner-row.flex.items-center.resever
+               .product-banner-col
+                   .product-banner-game
+                       +CardItem({
+                           src: 'https://cscmobi.com/wp-content/uploads/2020/08/icon_p8-160x160.png',
+                           width: "160",
+                           className: 'vertical text-center',
+                           title: 'Cooking Marina',
+                           desc: 'fast restaurant cooking games',
+                       })
+                       .product-banner-game-btn.flex.items-center.justify-center
+                           +Button({title: 'Download', size: 'small', link: '#'})
+               .product-banner-col
+                   img(src="https://cscmobi.com/wp-content/uploads/2020/08/p8_feature-e1598518298712.png")

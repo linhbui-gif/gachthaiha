@@ -1,0 +1,112 @@
+.Customers {
+  padding: 6rem 0;
+  background: $backgroundBlueGradient;
+  &.dark {
+    background: rgba($cloud-burst, 0.96);
+
+    .Customers {
+      &-title {
+        h2 {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  &-title {
+    margin-bottom: 2.7rem;
+
+    h2 {
+      text-align: left;
+      font-size: 3.2rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 0;
+      color: $white;
+    }
+  }
+
+  .owl-stage-outer {
+    padding: 5rem 0;
+    margin: -5rem 0;
+  }
+  .owl-nav{
+    right: 0;
+    position: absolute;
+    top: 0;
+    .owl-prev{
+      margin-right: 10px;
+    }
+    .owl-prev,.owl-next{
+      transform: rotate(180deg);
+      outline: none;
+    }
+  }
+  &-carousel {
+    &-item {
+      padding: 2.8rem 3.2rem;
+      background: $white;
+      border-radius: 1rem;
+      box-shadow: 0px .4rem 2rem rgba($black, 0.1);
+      flex-wrap: wrap;
+      @media (max-width: 991px) {
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      &-image {
+        position: relative;
+        @include centerScaleImage;
+        align-items: center;
+        @media (max-width: 991px) {
+          margin: 0 0 4rem 0;
+        }
+        margin-bottom: 2.6rem;
+        img {
+          border-radius: 50%;
+          max-width: 8.7rem;
+          height: 8.7rem;
+          margin-right: 1.8rem;
+        }
+
+        &-badge {
+          position: absolute;
+          bottom: -1.5rem;
+          right: 3rem;
+          width: 9rem;
+          height: 9rem;
+          border-radius: 50%;
+          text-align: center;
+          background: linear-gradient(94.88deg, #F1612A 1.11%, #FBAC3E 100%);
+          color: $white;
+          font-size: 1.6rem;
+        }
+      }
+
+      &-info {
+        @media (max-width: 991px) {
+          text-align: center;
+        }
+
+        &-title {
+          font-size: 2rem;
+          font-weight: 700;
+          color: $black;
+          margin-bottom: .4rem;
+        }
+
+        &-subtitle {
+          font-size: 2rem;
+          color: $black;
+          font-weight: 400;
+          margin-bottom: 1.2rem;
+        }
+
+        &-description {
+          font-size: 2rem;
+          color: $thunder;
+        }
+      }
+    }
+  }
+}

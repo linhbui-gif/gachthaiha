@@ -1,0 +1,21 @@
+mixin Customers({ title, data = [], isDark })
+  section.Customers(class=`${isDark ? 'dark' : ''}`)
+    .Customers-wrapper
+      .container
+        .row
+          .col-12
+            .Customers-title.wow.animate__animated.animate__fadeInUp
+              h2= title
+        .owl-carousel#Customers-carousel
+          each item in data
+            .item
+              .Customers-carousel-item.flex.items-center
+                .Customers-carousel-item-image
+                  img(src=`${item.image}` alt="")
+                  if (item.badge)
+                    .Customers-carousel-item-image-badge.flex.items-center.justify-center= item.badge
+                  .Customers-carousel-item-text
+                    h5.Customers-carousel-item-info-title= item.title
+                    h6.Customers-carousel-item-info-subtitle= item.subtitle
+                .Customers-carousel-item-info
+                  p.Customers-carousel-item-info-description= item.description

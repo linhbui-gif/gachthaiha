@@ -1,0 +1,19 @@
+mixin SchoolBlock({ index, image, title, description, country, tag, flag, link })
+  .SchoolBlock(class=`${index % 2 === 0 ? 'even' : 'odd'}`)
+    .SchoolBlock-image 
+      a(href=`${link}`) 
+        img(src=`${image}`, alt="")
+    .line
+
+    .SchoolBlock-info
+      a(href=`${link}`).SchoolBlock-title= title 
+      p.SchoolBlock-description= description 
+
+      if (country && tag && flag)
+        .SchoolBlock-row.flex.justify-between.items-center 
+          .SchoolBlock-country.flex.items-center 
+            .SchoolBlock-country-flag 
+              img(src=`${flag}`, alt="")
+            = country
+
+          .SchoolBlock-tag= tag

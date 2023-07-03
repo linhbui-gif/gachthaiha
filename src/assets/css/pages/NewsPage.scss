@@ -1,0 +1,57 @@
+.NewsPage {
+  &-wrapper {
+    padding: 4rem 0;
+    column-gap: 2rem;
+    row-gap: 4rem;
+
+    &-item {
+      flex: 1;
+
+      &:last-child {
+        flex: 0 0 38.5rem;
+        max-width: 38.5rem;
+
+        .Card {
+          position: sticky;
+          top: 1.6rem;
+
+          @media (max-width: 991px) {
+            position: static;
+          }
+        }
+      }
+
+      @media (max-width: 991px) {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+      }
+    }
+  }
+
+  &-list {
+    margin: 0 -1rem;
+    row-gap: 2rem;
+
+    &-hightlight {
+      &-btn {
+        padding: .8rem 1.6rem 1.6rem;
+      }
+    }
+
+    &-item {
+      padding: 0 1rem;
+      flex: 0 0 calc(100% / 3);
+      max-width: calc(100% / 3);
+
+      @media (max-width: 768px) {
+        flex: 0 0 calc(100% / 2);
+        max-width: calc(100% / 2);
+      }
+
+      @media (max-width: 575px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}

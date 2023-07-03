@@ -1,0 +1,10 @@
+.DropdownAccount
+  .Card
+    .Card-header.text-center Tài khoản
+    .Card-body
+      ul.ProfilePage-table-content-list 
+        each item in dataProfileTableContent
+          li.ProfilePage-table-content-list-item 
+            a(href=`${item.link}` class=`${item.isActive ? 'active' : ''}`)= item.title
+        li.ProfilePage-table-content-list-item 
+          span.js-open-modal(data-modal-id="#ModalLogout") Đăng xuất

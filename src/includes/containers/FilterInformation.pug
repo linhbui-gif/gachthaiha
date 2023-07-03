@@ -1,0 +1,24 @@
+.FilterInformation
+  .container
+    .FilterInformation-wrapper 
+      .FilterInformation-title lọc thông tin
+
+      form.FilterInformation-form(action="#").flex.flex-wrap
+        .FilterInformation-form-item
+          +Select({ placeholder: 'Quốc gia', bordered: true })
+        .FilterInformation-form-item
+          +Select({ placeholder: 'Bang/ thành phố', bordered: true })
+        .FilterInformation-form-item
+          +Select({ placeholder: 'Bậc học', bordered: true })
+        .FilterInformation-form-item
+          +Select({ placeholder: 'Ranking', bordered: true })
+        .FilterInformation-form-item
+          +Select({ placeholder: 'Khóa học', bordered: true })
+        .FilterInformation-form-item
+          +Select({ placeholder: 'Trường', bordered: true })
+        .FilterInformation-form-item
+          +Select({ placeholder: 'Ngành học', bordered: true })
+        .FilterInformation-form-item.expand
+          +Input({ placeholder: 'Nội dung tìm kiếm', bordered: true })
+        .FilterInformation-form-item.submit
+          +Button({ title: 'Tìm kiếm', bordered: true })

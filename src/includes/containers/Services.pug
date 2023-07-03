@@ -1,0 +1,37 @@
+section.Services
+    .container
+        +TitleHeader({ title:'CSCMobi',subtitle:'Mobile Services' })
+        .row.Services-top
+            each items in dataIconServiceTop
+                .col-lg-4.mb-5
+                    +CardItem({icon: true, nameIcon: "assets/icons/game.svg"})
+        .row
+            .col-lg-12
+                .Services-bottom
+                    +TitleHeader({ title:'Điều gì khiến chúng tôi',subtitle:'khác biệt ?', desc:'Với triết lý sản phẩm vì người dùng, chúng tôi luôn tự cải thiện mình, mang tới những sản phẩm hoàn hảo nhất cho người dùng. Không quá đặt nặng lợi nhuận lên trước, chúng tôi lấy người dùng làm tiêu chí để hoàn thiện sản phẩm.' })
+                    ul.Services-bottom-list
+                        each items in [1,2,3,4,5,6]
+                           li.Services-bottom-list-item.mb-4 Thiết kế những sản phẩm có tính ứng dụng cao và được nhiều khách hàng đón nhận.
+        .row(style="opacity:0;visibility:hidden").d-none.d-lg-block
+            .col-lg-12
+                .Services-bottom
+                    ul.Services-bottom-list
+                        each items in [1,2,3]
+                            li.Services-bottom-list-item.mb-4 Thiết kế những sản phẩm có tính ứng dụng cao và được nhiều khách hàng đón nhận.
+    .Services-diffirent
+        .container
+            .row.team-building.pt-5.p-lg-0
+                .col-12
+                    +TitleHeader({
+                        title: 'CSCMobi',
+                        subtitle: 'và những con số',
+                        classModify: 'custom mb-5 pb-5 mb-lg-0'
+                    })
+                each items in dataIconServiceNumber
+                    .col-lg-4
+                        +CardItem({
+                            icon: true, nameIcon: "assets/icons/search.svg", classCustomIcon: 'hover',
+                            className: 'vertical text-center title-color-red mb-4 mb-lg-0',
+                            title: '1800', desc: 'Chiến dịch ASO game/app thành công',
+                            classNumberCountup: 'statistic'
+                        })

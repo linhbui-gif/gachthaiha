@@ -1,0 +1,62 @@
+.CoreValues {
+  padding: 3rem 0 10rem;
+  overflow: hidden;
+
+  &-title {
+    margin-bottom: 4rem;
+
+    h2 {
+      font-size: 3.2rem;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+  }
+
+  &-carousel {
+    position: relative;
+
+    &-item {
+      border: 1px solid $ronchi;
+      border-radius: 2rem;
+      text-align: center;
+
+      &-image {
+        margin-bottom: 1rem;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &-title {
+        font-size: 3.6rem;
+        margin-bottom: 2rem;
+        padding: 0 2rem;
+      }
+
+      &-description {
+        font-size: 1.8rem;
+        padding: 0 2rem 2rem;
+      }
+    }
+
+    .owl-prev,
+    .owl-next {
+      width: 3.2rem;
+      height: 3.2rem;
+      position: absolute;
+      top: 50%;
+    }
+
+    .owl-prev {
+      transform: translate(-50%, -50%);
+      left: 0;
+    }
+
+    .owl-next {
+      transform: translate(50%, -50%);
+      right: 0;
+    }
+  }
+}

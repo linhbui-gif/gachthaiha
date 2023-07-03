@@ -1,0 +1,5 @@
+mixin Radio({ className = '', size = 'middle', label = '', name = '' })
+  .Radio(class=`${className} ${size}`).flex.items-start
+    input(type="radio" name=`${name || ''}`)
+    .Radio-control 
+    .Radio-label= label

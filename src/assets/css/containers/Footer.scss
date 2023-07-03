@@ -1,0 +1,46 @@
+.Footer {
+  background: #292845;
+   &-wrapper{
+     &-top{
+       padding: 5rem 0;
+       border-bottom: 1px solid rgba(255,255,255,.1);
+       &-logo{
+         @media (max-width: 992px) {
+           width: 100%;
+           text-align: center;
+         }
+       }
+       &-icon{
+         margin-bottom: 0;
+         @media (max-width: 992px) {
+           width: 100%;
+           text-align: center;
+           margin-top: 3rem;
+         }
+         a {
+           margin: 0 1rem;
+           i{
+             font-size: 2rem;
+             color: $orange;
+           }
+         }
+       }
+     }
+     &-bottom{
+       padding: 5rem 0;
+       padding-bottom: 2rem;
+       &-list{
+         color: white;
+         text-align: center;
+         &-item{
+           font-size: 1.4rem;
+           margin-bottom: 1rem;
+           a{
+             color: white;
+             margin-right: 1.5rem;
+           }
+         }
+       }
+     }
+   }
+}

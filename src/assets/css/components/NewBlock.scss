@@ -1,0 +1,81 @@
+.NewBlock {
+  &.vertical {
+    background: $white;
+    box-shadow: 0px .4rem 2rem rgba($black, 0.1);
+
+    .NewBlock {
+      &-image {
+        height: 21.2rem;
+      }
+
+      &-info {
+        padding: 1.2rem;
+
+        &-title {
+          margin-bottom: 1.2rem;
+          font-size: 2rem;
+          font-weight: 700;
+          display: block;
+          color: $black;
+        }
+
+        &-description {
+          line-height: 1.5;
+          font-size: 1.6rem;
+          color: $boulder;
+        }
+      }
+    }
+  }
+
+  &.horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.4rem;
+    border-bottom: 1px solid $silver;
+
+    .NewBlock {
+      &-image {
+        flex: 0 0 11rem;
+        max-width: 11rem;
+        height: 7.8rem;
+        margin-right: 1.2rem;
+      }
+
+      &-info {
+        flex: 1;
+
+        &-title {
+          font-size: 1.6rem;
+          font-weight: 700;
+          margin-bottom: 0;
+          color: $black;
+        }
+      }
+    }
+  }
+
+  &-image {
+
+    @include centerScaleImage;
+  }
+
+  &-date {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 1rem;
+    color: $boulder;
+    font-size: 1.4rem;
+  }
+
+  &-socials {
+    margin-top: 1.2rem;
+    column-gap: 2rem;
+
+    &-item {
+      width: 2rem;
+      height: 2rem;
+      @include centerOriginImage;
+    }
+  }
+}

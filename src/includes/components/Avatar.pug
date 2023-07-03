@@ -1,0 +1,9 @@
+mixin Avatar({ image = '' })
+  .Avatar
+    input(type="file")
+
+    if (image)
+      img(src=`${image}`, alt="")
+    
+    .Avatar-icon 
+      img(src="./assets/icons/icon-camera.svg", alt="")

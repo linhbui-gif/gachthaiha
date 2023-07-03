@@ -1,0 +1,8 @@
+mixin Select({ className = '', size = 'middle', placeholder = '', bordered = false })
+  .Select(class=`${className} ${size} ${bordered ? 'bordered' : ''}`)
+    select.Select-control
+      if (placeholder)
+        option(value="")= placeholder
+
+    .Select-arrow 
+      img(src="./assets/icons/icon-angle-down.svg", alt="")

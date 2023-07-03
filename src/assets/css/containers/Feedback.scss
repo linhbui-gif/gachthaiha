@@ -1,0 +1,53 @@
+.Feedback {
+  padding: 5.5rem 0;
+  background: $alabaster;
+  overflow: hidden;
+
+  &-title {
+    margin-bottom: 10rem;
+
+    h2 {
+      text-align: center;
+      font-size: 3.2rem;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+  }
+
+  &-carousel {
+    &-item {
+      iframe {
+        width: 100%;
+        height: 33rem;
+      }
+    }
+  }
+
+  .owl-stage-outer {
+    @media (min-width: 769px) {
+      transform: scale(1.2);
+    }
+  }
+
+  .owl-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+
+    .owl-dot {
+      width: .6rem;
+      height: .6rem;
+      border-radius: 50%;
+      background: $iron;
+      cursor: pointer;
+      margin: 0 0.25rem;
+      transition: $common-transition;
+
+      &.active {
+        width: 2rem;
+        border-radius: 10px;
+        background: $backgroundOrangeGradient;
+      }
+    }
+  }
+}

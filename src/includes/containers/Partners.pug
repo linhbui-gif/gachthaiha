@@ -1,0 +1,19 @@
+section.Partners
+  .container
+    .Partners-wrapper 
+      .Partners-title.wow.animate__animated.animate__fadeInUp
+        h2 Đối tác trong và ngoài nước
+
+      //- .Partners-list.flex.flex-wrap
+      //-   each item in [1,2,3,4,5,6,1,2,3,4]
+      //-     .Partners-list-col
+      //-       .Partners-list-item
+      //-         img(src=`./assets/images/image-partner-${item}.png`, alt="")
+
+      .Partners-list-carousel
+        .owl-carousel#Partners-carousel
+          each item in [1,2,3,4,5,6]
+            .item
+              .Partners-list-item-group
+                  .Partners-list-item
+                    img(src=`./assets/images/image-partner-${item}.png`, alt="")

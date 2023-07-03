@@ -1,0 +1,18 @@
+section.Contact
+  .container
+    .Contact-wrapper.flex.flex-wrap
+      .Contact-wrapper-item
+        .Contact-item-image 
+          img(src="./assets/images/image-contact-1.png", alt="")
+        //- h3.Contact-item-title Lịch sử sự kiện
+        //- p.Contact-item-description Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+        .Contact-item-btn.flex.justify-center
+          +Button({ title: 'TỰ nộp hồ sơ',className:'radius', bordered: false })
+
+      .Contact-wrapper-item
+        .Contact-item-image 
+          img(src="./assets/images/image-contact-2.png", alt="")
+        //- h3.Contact-item-title Lịch sử sự kiện
+        //- p.Contact-item-description Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+        .Contact-item-btn.flex.justify-center
+          +Button({ title: 'Liên hệ tư vấn', className: 'js-open-modal radius', bordered: false, dataModalId: '#ModalContactInformation' })

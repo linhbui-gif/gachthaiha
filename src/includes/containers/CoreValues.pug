@@ -1,0 +1,14 @@
+section.CoreValues
+  .container
+    .CoreValues-wrapper 
+      .CoreValues-title.wow.animate__animated.animate__fadeInUp
+        h2 Giá trị cốt lõi
+
+      .CoreValues-carousel#CoreValues-carousel.owl-carousel
+        each item in [1,2,3,1,2,3]
+          .item
+            .CoreValues-carousel-item
+              .CoreValues-carousel-item-image
+                img(src=`./assets/images/image-value-core-${item}.png`, alt="")
+              h3.CoreValues-carousel-item-title Lorem Ipsum 
+              p.CoreValues-carousel-item-description Lorem Ipsum is simply dummy text of the printing

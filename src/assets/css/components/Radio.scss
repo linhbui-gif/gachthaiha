@@ -1,0 +1,64 @@
+.RadioGroup {
+  &-wrapper {
+    height: 5rem;
+    padding: .4rem 2rem;
+
+    .Radio {
+      &:not(:last-child) {
+        margin-right: 1.2rem;
+      }
+    }
+  }
+
+  &.bordered {
+    border: 1px solid $silver;
+    border-radius: 0.5rem;
+  }
+}
+
+.Radio {
+  position: relative;
+
+  input {
+    @include fullAbsolute;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+
+    &:checked~.Radio-control {
+      border-color: $backgroundOrangeGradient;
+
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+
+  &-control {
+    position: relative;
+    max-width: 2rem;
+    width: 2rem;
+    flex: 0 0 2rem;
+    height: 2rem;
+    margin-right: 1.2rem;
+    border-radius: 50%;
+    border: 1px solid $silver;
+    transition: $common-transition;
+    margin-top: .3rem;
+
+    &::before {
+      transition: $common-transition;
+      content: '';
+      @include centerAbsolute;
+      width: 1rem;
+      height: 1rem;
+      background: $backgroundOrangeGradient;
+      border-radius: 50%;
+      opacity: 0;
+    }
+  }
+
+  &-label {
+    font-size: 1.8rem;
+  }
+}

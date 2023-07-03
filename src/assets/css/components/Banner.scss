@@ -1,0 +1,32 @@
+.Banner {
+  position: relative;
+
+  &-image {
+    height: 55rem;
+    @include centerScaleImage;
+
+    @media (max-width: 768px) {
+      height: 40rem !important;
+    }
+  }
+
+  &-overlay {
+    background: rgba($cloud-burst, 0.9);
+    @include fullAbsolute;
+    z-index: 1;
+  }
+
+  &-text {
+    text-transform: uppercase;
+    color: $white;
+    z-index: 2;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    @include centerAbsolute;
+
+    &.transform {
+      transform: translate(-50%, -7.5rem);
+    }
+  }
+}

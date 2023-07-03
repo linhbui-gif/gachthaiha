@@ -1,0 +1,38 @@
+extends includes/layouts/Guest.pug
+
+block pages
+    section.hiring
+        +BannerCommon({subtitle:'HOME - CATEGORY', title:'Tuyển dụng'})
+        .container.pb-5.pt-5
+            .row
+                each items in [1,2,3,4,5,6]
+                    .col-12
+                        +CardItem({
+                            title: 'Thiết kế đồ họa game – 2D Game Artist',
+                            desc: 'Mô tả công việc –  Xây dựng ý tưởng, thiết kế giao diện (UI/UX), nhân vật, background, elements, item… cho Game Mobile. – Thiết kế, lên ý tưởng cho các hoạt cảnh, bối cảnh trong game (Animation, vfx, sfx …) – Tham gia thiết kế các ấn phẩm, hình ảnh quảng bá game (Logo, Icon,...',
+                            src: 'https://secure.gravatar.com/avatar/57a60f3839fd4537d5874fd1c3c9b8c6?s=144&r=g',
+                            className: 'card-hiring',
+                            isHiring: true,
+                            link:'tuyen-dung-chi-tiet.html'
+                        })
+                            block category
+                                .CardItem-body-category
+                                    a.CardItem-body-category-big Tuyển dụng
+                                    a.CardItem-body-category-big UNCATEGORIZED
+                            block card
+                                .Card-item-body-bottom.flex.items-center.justify-between
+                                    ul.Card-item-body-bottom-social.flex.items-center
+                                        li.Card-item-body-bottom-social-item
+                                            a.Card-item-body-bottom-social-item-link
+                                                i.fa.fa-facebook
+                                        li.Card-item-body-bottom-social-item
+                                            a.Card-item-body-bottom-social-item-link.tw
+                                                i.fa.fa-twitter
+                                        li.Card-item-body-bottom-social-item
+                                            a.Card-item-body-bottom-social-item-link.linkein
+                                                i.fa.fa-linkedin
+                                    .Card-item-body-bottom-btn
+                                        +Button({title: 'Continue Reading', size: 'small', link: 'tuyen-dung-chi-tiet.html'})
+            .col-12
+                .HeroBanner-left-action.flex.justify-center
+                    +Button({title: 'Xem thêm', size: 'small', link: '#'})

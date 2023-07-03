@@ -1,0 +1,162 @@
+.ModalAuth {
+  .Modal {
+    &-body {
+      padding: 0;
+    }
+
+    &-main {
+      margin-top: 4vh;
+    }
+  }
+
+  &-wrapper {
+    &-item {
+      flex: 0 0 50%;
+      max-width: 50%;
+
+      @media (max-width: 768px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+        min-height: 68rem;
+      }
+
+      &:last-child {
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &-form {
+    max-width: 40rem;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5rem 0 2rem;
+    text-align: center;
+
+    @media (max-width: 768px) {
+      max-width: calc(100% - 8rem);
+    }
+
+    &-logo {
+      max-width: 25.4rem;
+      margin: 0 auto 3rem;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &-title {
+      font-size: 3.2rem;
+      font-weight: 700;
+      margin-bottom: 4.4rem;
+    }
+
+    .Input {
+      margin-bottom: 2rem;
+    }
+
+    &-forgot-password {
+      display: block;
+      margin-bottom: 4.5rem;
+      color: $black;
+      font-size: 1.6rem;
+    }
+
+    &-no-account {
+      margin-top: auto;
+      color: $black;
+      font-size: 1.8rem;
+
+      strong {
+        padding-left: .4rem;
+        text-transform: uppercase;
+        color: $flamingo;
+      }
+    }
+  }
+
+  &-carousel {
+    .owl-dots {
+      position: absolute;
+      bottom: 3rem;
+      z-index: 2;
+      left: 50%;
+      transform: translateX(-50%);
+
+      .owl-dot {
+        width: .5rem;
+        height: .5rem;
+        border-radius: 2rem;
+        background: $iron;
+        cursor: pointer;
+        margin: 0 0.25rem;
+        transition: $common-transition;
+
+        &.active {
+          width: 2rem;
+          background: $backgroundOrangeGradient;
+        }
+      }
+    }
+
+    &-item {
+      position: relative;
+      min-height: 68rem;
+
+      &-bg {
+        @include fullAbsolute;
+        @include centerScaleImage;
+        z-index: 1;
+      }
+
+      &-info {
+        max-width: 44.7rem;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+      }
+
+      &-title {
+        position: relative;
+        z-index: 2;
+        margin-bottom: 3.2rem;
+
+        h2 {
+          background: linear-gradient(94.88deg, #F1592A 1.11%, #FBAC3E 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          text-fill-color: transparent;
+          font-size: 3.2rem;
+          font-weight: 700;
+          text-align: center;
+        }
+
+        h1 {
+          font-size: 3.2rem;
+          font-weight: 700;
+          padding: .4rem 2.4rem;
+          border-radius: .5rem;
+          background: $backgroundBlueGradient;
+          margin-left: .8rem;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  &-content {
+    ul li {
+      width: fit-content;
+      margin: 0 auto;
+    }
+
+    * {
+      color: $white;
+    }
+  }
+}

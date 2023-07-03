@@ -1,0 +1,362 @@
+.SchoolDetailPage {
+  padding: 3.5rem 0;
+
+  &-wrapper {
+    row-gap: 4rem;
+    column-gap: 2rem;
+
+    &-item {
+      &:first-child {
+        flex: 0 0 calc(100% - 39rem - 2rem);
+        max-width: calc(100% - 39rem - 2rem);
+      }
+
+      &:last-child {
+        flex: 0 0 39rem;
+        max-width: 39rem;
+      }
+
+      @media (max-width: 991px) {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+      }
+    }
+  }
+
+  &-image {
+    margin-bottom: 3.5rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-header {
+    margin-bottom: 3.5rem;
+
+    @media (max-width: 991px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &-logo {
+      flex: 0 0 33rem;
+      max-width: 33rem;
+      margin-right: 8rem;
+
+      @media (max-width: 991px) {
+        flex: unset;
+        margin: 0 0 4rem 0;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &-info {
+      &-title {
+        font-size: 3.2rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+
+        span {
+          display: block;
+          font-size: 1.6rem;
+          font-weight: 700;
+          color: $white;
+          background: $backgroundOrangeGradient;
+          border-radius: 1.6rem;
+          padding: .4rem 2.4rem;
+          margin-left: .8rem;
+        }
+      }
+
+      &-description {
+        font-size: 1.8rem;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  &-numbers {
+    padding: 1.4rem 0;
+    border-radius: .5rem;
+    background: $backgroundBlueGradient;
+    margin-bottom: 6rem;
+    row-gap: 2rem;
+
+    @media (max-width: 768px) {
+      justify-content: space-between;
+    }
+
+    &-item {
+      flex: 0 0 calc(100% / 5);
+      max-width: calc(100% / 5);
+      padding: 0 3rem;
+
+      @media (max-width: 768px) {
+        flex: 0 0 calc(100% / 2);
+        max-width: calc(100% / 2);
+      }
+
+      &:not(:last-child) {
+        border-right: 1px solid $white;
+
+        @media (max-width: 768px) {
+          border-right: none;
+        }
+      }
+
+      &-title {
+        font-size: 1.8rem;
+        color: $white;
+        margin-bottom: .8rem;
+      }
+
+      &-description {
+        font-size: 3.2rem;
+        color: $white;
+        font-weight: 700;
+      }
+    }
+  }
+
+  &-card {
+    position: relative;
+    padding: 2rem 3.2rem;
+    box-shadow: 0px .4rem 2rem rgba($black, 0.1);
+    border-radius: .5rem;
+    margin-bottom: 3.5rem;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: .6rem;
+      border-radius: .5rem;
+      background: $backgroundBlueGradient;
+      height: 100%;
+      content: '';
+    }
+
+    &-row {
+      @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 2rem;
+      }
+    }
+
+    &-title {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    &-description {
+      font-size: 1.8rem;
+    }
+
+    &-link {
+      color: $flamingo;
+      font-size: 1.8rem;
+
+      img {
+        width: 2rem;
+        height: 2rem;
+        margin: 0 1.2rem 0 0;
+      }
+    }
+  }
+
+  &-table-content {
+    position: sticky;
+    top: 1.6rem;
+
+    @media (max-width: 991px) {
+      position: static;
+    }
+
+    &-list {
+      &-item {
+        &:not(:last-child) {
+          border-bottom: 1px solid $silver;
+        }
+
+        a {
+          padding: 1.5rem 1.8rem;
+          text-transform: uppercase;
+          font-size: 1.6rem;
+          font-weight: 700;
+          color: $black;
+          display: block;
+          transition: $common-transition;
+
+          &:hover,
+          &.active {
+            color: $flamingo;
+          }
+        }
+      }
+    }
+  }
+
+  &-btns {
+    .Button {
+      margin-top: 1.6rem;
+    }
+  }
+
+  &-gallery {
+    img {
+      margin-bottom: 0;
+    }
+  }
+
+  &-gallery,
+  &-ralated-school,
+  &-feedbacks {
+    margin-bottom: 3.5rem;
+
+    .owl-stage-outer {
+      padding: 5rem 0;
+      margin: -5rem 0;
+    }
+  }
+
+  .Collapse,
+  .Tab {
+    margin-bottom: 3.5rem;
+  }
+
+  &-programs {
+    &-item {
+      &:not(:last-child) {
+        margin-bottom: 3.5rem;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+
+      span {
+        color: $flamingo;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background: $white;
+        box-shadow: 0px .4rem 2rem rgba($black, 0.1);
+
+        thead {
+          td {
+            background: $backgroundBlueGradient;
+            color: $white;
+          }
+        }
+
+        td {
+          font-size: 1.8rem;
+          padding: 1rem 2rem;
+          border-bottom: 1px solid $alto;
+
+          &:last-child {
+            text-align: right;
+          }
+        }
+
+        tbody {
+          tr {
+            &:last-child {
+              td {
+                border-bottom: none;
+                background: $athens-gray;
+
+                &:last-child {
+                  font-weight: 700;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-tags {
+      row-gap: 2rem;
+      column-gap: 2rem;
+      margin-bottom: 2.4rem;
+
+      &-item {
+        font-size: 1.6rem;
+        padding: .4rem 2.4rem;
+        border-radius: .5rem;
+        background: $backgroundOrangeGradient;
+        color: $white;
+      }
+    }
+
+    &-header {
+      padding-bottom: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid $cloud-burst;
+      font-size: 1.8rem;
+
+      &-icon {
+        width: 2.4rem;
+        height: 2.4rem;
+        max-width: 2.4rem;
+        margin-right: 1rem;
+        display: flex;
+        background: $backgroundBlueGradient;
+        border-radius: .5rem;
+
+        img {
+          margin: auto;
+          width: 1.4rem;
+          height: 1.4rem;
+        }
+      }
+    }
+  }
+
+  &-courses {
+    &-header {
+      column-gap: 2rem;
+
+      &-filter {
+        flex: 1;
+
+        @media (max-width: 768px) {
+          margin-top: 1.5rem;
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+
+        .Select {
+          border-radius: 1rem;
+
+          &-control {
+            height: 4.7rem;
+          }
+        }
+      }
+    }
+
+    &-detail {
+      &-link {
+        font-size: 1.8rem;
+        color: $flamingo;
+
+        img {
+          max-width: 2.4rem;
+          flex: 0 0 2.4rem;
+          margin-bottom: 0;
+          margin-left: .8rem;
+        }
+      }
+    }
+  }
+}

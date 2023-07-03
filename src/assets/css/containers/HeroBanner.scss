@@ -1,0 +1,48 @@
+.HeroBanner{
+  background-image: url(https://cscmobi.com/wp-content/uploads/2018/09/header-cscmobi-bg2.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  & > .row{
+    width: 100%;
+    padding: 0 4rem;
+  }
+  &-left{
+    &-action{
+      margin-top: 2rem;
+      .Button{
+        margin-right: 2rem;
+      }
+    }
+    &-header{
+      &-title{
+        &-sub{
+          font-size: 1.5rem;
+          font-weight: 400;
+          margin-bottom: 1rem;
+        }
+        &-content{
+          position: relative;
+          padding-top: 1rem;
+          font-weight: 400;
+          &:before{
+            content: "";
+            top: 0;
+            width: 3.75rem;
+            border-color: $red;
+            border-style: solid;
+            border-width: 2px 0 0;
+            position: absolute;
+          }
+          strong{
+            font-weight: 700;
+            color: $red;
+          }
+        }
+      }
+    }
+  }
+}

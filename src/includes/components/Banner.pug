@@ -1,0 +1,8 @@
+mixin Banner({ image = '', text, height, isTransform = false })
+  section.Banner
+    .Banner-wrapper 
+      .Banner-image(style=`${height ? `height: ${height};` : ''}`)
+        img(src=`${image}`, alt="")
+      if (text)
+        .Banner-overlay
+        h1.Banner-text(class=`${isTransform ? 'transform' : ''}`)= text 

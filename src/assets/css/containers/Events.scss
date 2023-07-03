@@ -1,0 +1,44 @@
+.Events {
+  padding: 7rem 0;
+  background: $gray;
+
+  &-title {
+    margin-bottom: 5.5rem;
+
+    h2 {
+      text-align: center;
+      font-size: 3.2rem;
+      color: $black;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+
+  .owl-stage-outer {
+    //@media (min-width: 769px) {
+    //  transform: scale(1.2);
+    //}
+  }
+
+  .owl-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+
+    .owl-dot {
+      width: .6rem;
+      height: .6rem;
+      border-radius: 50%;
+      background: $iron;
+      cursor: pointer;
+      margin: 0 0.25rem;
+      transition: $common-transition;
+
+      &.active {
+        width: 2rem;
+        border-radius: 10px;
+        background: $backgroundOrangeGradient;
+      }
+    }
+  }
+}

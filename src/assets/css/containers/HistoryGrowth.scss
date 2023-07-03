@@ -1,0 +1,92 @@
+.HistoryGrowth {
+  padding: 6rem 0 11rem;
+
+  &-title {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+  }
+
+  &-description {
+    font-size: 2rem;
+    line-height: 1.5;
+    color: $thunder;
+    max-width: 100rem;
+
+    @media (max-width: 991px) {
+      max-width: 100%;
+    }
+  }
+
+  &-timeline {
+    margin-top: 4rem;
+    row-gap: 4rem;
+    column-gap: 4rem;
+
+    &-col {
+      flex: 1;
+
+      &:first-child {
+        flex: 1.2;
+      }
+
+      @media (max-width: 991px) {
+        flex: 0 0 100% !important;
+        max-width: 100%;
+      }
+    }
+
+    &-image {
+      img {
+        width: 100%;
+        transform: translateY(-5rem);
+
+        @media (max-width: 991px) {
+          transform: none;
+          max-width: 70rem;
+          margin: 0 auto;
+          display: block;
+        }
+      }
+    }
+
+    &-item {
+      position: relative;
+      padding-left: 3.5rem;
+
+      &:not(:last-child) {
+        padding-bottom: 8rem;
+
+        &::before {
+          position: absolute;
+          height: 100%;
+          width: .4rem;
+          background: $backgroundBlueGradient;
+          top: 0.8rem;
+          left: -0.2rem;
+          content: '';
+        }
+      }
+
+      &-year {
+        position: relative;
+        font-size: 3.2rem;
+        color: $thunder;
+        margin-bottom: 1.5rem;
+
+        &::before {
+          position: absolute;
+          width: 2rem;
+          height: 2rem;
+          background: $backgroundOrangeGradient;
+          border: 2px solid $white;
+          border-radius: 50%;
+          left: -4.5rem;
+          top: 0.5rem;
+          content: '';
+          box-shadow: 0px .4rem 2rem rgba($black, 0.1);
+        }
+      }
+    }
+  }
+}

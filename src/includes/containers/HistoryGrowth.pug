@@ -1,0 +1,40 @@
+-
+  const dataHistoryTimeline = [
+    {
+      year: '1920',
+      description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled `,
+    },
+    {
+      year: '1950',
+      description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s `,
+    },
+    {
+      year: '1980',
+      description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s `,
+    },
+    {
+      year: '2000',
+      description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s `,
+    },
+    {
+      year: '2020',
+      description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s `,
+    },
+  ]
+
+section.HistoryGrowth
+  .container 
+    .HistoryGrowth-wrapper 
+      h2.HistoryGrowth-title Lịch sử hình thành & phát triển
+      p.HistoryGrowth-description Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s 
+
+      .HistoryGrowth-timeline.flex.flex-wrap 
+        .HistoryGrowth-timeline-col
+          each item in dataHistoryTimeline 
+            .HistoryGrowth-timeline-item.wow.animate__animated.animate__fadeInUp
+              h5.HistoryGrowth-timeline-item-year= item.year 
+              p.HistoryGrowth-description= item.description
+
+        .HistoryGrowth-timeline-col
+          .HistoryGrowth-timeline-image 
+            img(src="./assets/images/image-history-growth.png" alt="")

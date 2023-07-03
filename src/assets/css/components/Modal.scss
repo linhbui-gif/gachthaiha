@@ -1,0 +1,70 @@
+.Modal {
+  @include fullAbsolute;
+  position: fixed;
+  pointer-events: none;
+  z-index: 5;
+  padding: 4rem;
+
+  &.active {
+    pointer-events: unset;
+
+    .Modal {
+      &-overlay {
+        opacity: 1
+      }
+
+      &-main {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+    }
+  }
+
+  &-overlay {
+    @include fullAbsolute;
+    transition: $common-transition;
+    background: rgba($black, 0.6);
+    opacity: 0;
+  }
+
+  &-main {
+    position: relative;
+    z-index: 2;
+    transition: $common-transition;
+    max-width: 107.4rem;
+    width: 100%;
+    margin: 10vh auto 0;
+    opacity: 0;
+    transform: translateY(10%);
+  }
+
+  &-header {
+    position: relative;
+    background: $backgroundOrangeGradient;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+
+    &-close {
+      position: absolute;
+      right: .8rem;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      z-index: 2;
+      width: 3rem;
+      height: 3rem;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  &-body {
+    background: $white;
+    padding: 3rem;
+  }
+}

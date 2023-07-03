@@ -1,0 +1,21 @@
+.ModalSubmitFileSuccess.Modal#ModalSubmitFileSuccess
+  .Modal-overlay 
+  .Modal-main(style="max-width: 62.8rem;")
+    .Modal-header 
+      |THông báo
+
+    .Modal-body 
+      .style-content 
+        p.text-center
+          |Hồ sơ của bạn đã được tiếp nhận.
+          br
+          |Chúng tôi sẽ liên hệ với bạn khi hồ sơ được 
+          br
+          |xét duyệt thành công!
+          br
+
+        .ModalSubmitFileSuccess-form-submit.flex.justify-between(style="column-gap: 2rem;")
+          .ModalSubmitFileSuccess-form-submit-item(style="flex: 1")
+            +Button({ title: 'Xem hồ sơ', size: 'small', className: 'secondary' })
+          .ModalSubmitFileSuccess-form-submit-item(style="flex: 1")
+            +Button({ title: 'Đồng ý', size: 'small', className: 'Modal-close' })

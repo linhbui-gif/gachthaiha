@@ -1,0 +1,13 @@
+.Card {
+  border: 1px solid $silver;
+
+  &-header {
+    background: $backgroundBlueGradient;
+    padding: 1.5rem 2.6rem;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    color: $white;
+    font-weight: 600;
+
+  }
+}

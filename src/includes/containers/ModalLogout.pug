@@ -1,0 +1,15 @@
+.ModalLogout.Modal#ModalLogout
+  .Modal-overlay 
+  .Modal-main(style="max-width: 62.8rem;")
+    .Modal-header 
+      |THông báo
+
+    .Modal-body 
+      .style-content 
+        p.text-center Xác nhận đăng xuất tài khoản
+
+        .ModalLogout-form-submit.flex.justify-between(style="column-gap: 2rem;")
+          .ModalLogout-form-submit-item(style="flex: 1")
+            +Button({ title: 'Hủy bỏ', size: 'small', className: 'Modal-close secondary' })
+          .ModalLogout-form-submit-item(style="flex: 1")
+            +Button({ title: 'Đồng ý', size: 'small', className: 'Modal-close' })

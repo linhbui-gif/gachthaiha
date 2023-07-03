@@ -1,0 +1,20 @@
+extends includes/layouts/Guest.pug
+
+block pages
+   section.About-pages
+       .About-pages-wrapper.d-flex.flex-wrap
+           .About-pages-wrapper-item
+               .About-pages-left
+                     .About-pages-left-content
+                         h1.About-pages-left-content-title Chúng tôi là ai?
+                         p.About-pages-left-content-desc CSCMobi là một công ty startup công nghệ được thành lập từ tháng 6 năm 2015. Công ty hiện đang có 41 thành viên, gồm những con người có đam mê về ngành mobile game, mong muốn tạo ra những sản phẩm game chất lượng hướng đến những người trẻ, hiện đại trong thời kì cách mạng công nghiệp 4.0. Sologan của chúng tôi là CREATIVE – SPEED – CRAZY : Người CSC luôn mang theo hoài bão lớn, với những ý tưởng đột phá, và khác biệt.
+                         .HeroBanner-left-action.flex.justify-center
+                             +Button({
+                                 link: '#',
+                                 title: 'Tuyển dụng',
+                                 className: 'secondary',
+                                 size: 'small',
+                             })
+                             +Button({title: 'Liên hệ', size: 'small', link: '#'})
+           .About-pages-wrapper-item
+               img(src="https://cscmobi.com/wp-content/uploads/2018/09/aboutus.jpg", width="100%")
