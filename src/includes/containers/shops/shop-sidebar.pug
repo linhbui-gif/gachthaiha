@@ -1,56 +1,28 @@
 aside.shop-sidebar
     .widget.mb-35
         .widget-title.mb-25
-            h4.title Danh mục sản phẩm
+            h4.title Chọn kích thước
         .shop-cat-list
             ul
-                li
-                    a(href='#')
-                        | Furniture
-                        span 8
-                li
-                    a(href='#')
-                        | Coffee &amp; Tables1
-                        span 3
-                li
-                    a(href='#')
-                        | Lighting3
-                        span 2
-                li
-                    a(href='#')
-                        | Decoration5
-                        span 5
-                li
-                    a(href='#')
-                        | Electronics1
-                        span 9
-                li
-                    a(href='#')
-                        | Beds2
-                        span 8
-                li
-                    a(href='#')
-                        | Armchairs &amp; Chaises3
-                        span 7
-                li
-                    a(href='#')
-                        | Sofas &amp; Sleeper Sofas
-                        span 3
-    .widget.mb-40
-        .trending-product
-            h3.title Sản phẩm thịnh hành
+                +CategoryItem({ data: listSize })
+    .widget.mb-35
+        .widget-title.mb-25
+            h4.title Loại sản phẩm
+        .shop-cat-list
             ul
-                each item in [1,2,3,4,5,6,7,8]
-                    li.trending-product-item.mb-30
-                        .thumb
-                            a(href='shop-details.html')
-                                img(src='https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-60x60-trung-quoc-1566B07-qrc-300x300.jpg' alt='')
-                        .content
-                            h6.title
-                                a(href='shop-details.html') Gạch Ốp Lát 60×60 Trung Quốc 1566B07
-                            h4.price
-                                | 660.000₫ /m2
-
+                +CategoryItem({data: listCategory})
+    .widget.mb-35
+        .widget-title.mb-25
+            h4.title Bề mặt
+        .shop-cat-list
+            ul
+                +CategoryItem({data: listMat})
+    .widget.mb-35
+        .widget-title.mb-25
+            h4.title Bộ sưu tập
+        .shop-cat-list
+            ul
+                +CategoryItem({data: listBst})
     .widget
         .trending-product
             h3.title Bạn vừa xem

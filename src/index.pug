@@ -2,46 +2,9 @@ extends includes/layouts/Guest.pug
 
 block pages
     include includes/containers/banners/banner
+    include includes/containers/services/services
     include includes/containers/products/flash-product
-    // features-area
-    section.features-area.pt-90
-        .container
-            .row.justify-content-center
-                .col-lg-6.col-md-10
-                    .features-item.mb-30
-                        .features-thumb
-                            img(src='https://gachtot.vn/wp-content/uploads/2021/12/gach-lat-nen.jpg' alt='')
-                        .features-content
-                            h2.title
-                                a(href='shop.html', style="color:white") GẠCH NÁT NỀN
-                            p(style="color:white") Nội thất – Ngoại thất
-                            a.btn(href='shop.html') Xem chi tiết
-                .col-lg-6.col-md-10
-                    .features-item.mb-30
-                        .features-thumb
-                            img(src='https://gachtot.vn/wp-content/uploads/2021/12/gach-op-tuong.jpg' alt='')
-                        .features-content.white-content
-                            h2.title
-                                a(href='shop.html') GẠCH ỐP TƯỜNG
-                            p Gạch thẻ, Viền điểm và Trang trí
-                            a.btn(href='shop.html') Xem chi tiết
-                .col-lg-6.col-md-10
-                    .features-item.mb-30
-                        .features-thumb
-                            img(src='https://gachtot.vn/wp-content/uploads/2021/12/gach-kien-truc.jpg' alt='')
-                        .features-content.white-content
-                            h2.title
-                                a(href='shop.html') GẠCH TRANG TRÍ
-                            p Gạch ốp trang trí kiến trúc
-                            a.btn(href='shop.html') Xem chi tiết
-                .col-lg-6.col-md-10
-                    .features-item.mb-30
-                        .features-thumb
-                            img(src='https://gachtot.vn/wp-content/uploads/2021/12/gach-kien-truc.jpg' alt='')
-                        .features-content.white-content
-                            h2.title
-                                a(href='shop.html') GẠCH BỂ BƠI, SÂN VƯỜN
-                            p Và nhiều loại gạch, ngói lợp khác…
-                            a.btn(href='shop.html') Xem chi tiết
+    include includes/containers/banners/banner-2
+    include includes/containers/abouts/about
     // features-area-end
     include includes/containers/blogs/blog

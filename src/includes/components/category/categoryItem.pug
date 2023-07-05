@@ -1,0 +1,5 @@
+mixin CategoryItem({ data = [] } )
+    each item in data
+        li
+            a(href=`${item.href}` title="")=item.name
+                span=item.number
