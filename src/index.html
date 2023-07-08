@@ -1,351 +1,322 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Meta-->
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Olle - Price Comparison with Multi-vendor Store HTML Template</title>
-    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="Anil z" name="author">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
-    <!-- Place favicon.ico in the root directory-->
-    <!-- CSS here-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/mCustomScrollbar.min.css">
+    <meta name="description" content="Shopwise is Powerful features and You Can Use The Perfect Build this Template For Any eCommerce Website. The template is built for sell Fashion Products, Shoes, Bags, Cosmetics, Clothes, Sunglasses, Furniture, Kids Products, Electronics, Stationery Products and Sporting Goods.">
+    <meta name="keywords" content="ecommerce, electronics store, Fashion store, furniture store,  bootstrap 4, clean, minimal, modern, online store, responsive, retail, shopping, ecommerce store">
+    <!-- SITE TITLE-->
+    <title>Shopwise - eCommerce Bootstrap 4 HTML Template</title>
+    <!-- Favicon Icon-->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+    <!-- Animation CSS-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Latest Bootstrap min CSS-->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!-- Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
+    <!-- Icon Font CSS-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/linearicons.css">
     <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/simple-line-icons.css">
+    <!-- - owl carousel CSS-->
+    <link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.css">
+    <link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.default.min.css">
+    <!-- Magnific Popup CSS-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!-- Slick CSS-->
     <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/jquery-ui.css">
-    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <!-- Style CSS-->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/main.css">
   </head>
   <body>
-    <!-- Preloader-->
-    <div id="preloader">
-      <div id="preloader-status">
-        <div class="preloader-position loader"><span></span></div>
-      </div>
-    </div>
-    <!-- Preloader end-->
-    <!-- Scroll-top-->
-    <button class="scroll-top scroll-to-target" data-target="html"><i class="fas fa-angle-up"></i></button>
-    <!-- Scroll-top-end-->
-    <header id="sticky-header">
-      <div class="header-top-area">
+    <!-- LOADER-->
+    <!--.preloader-->
+    <!--    .lds-ellipsis-->
+    <!--        span-->
+    <!--        span-->
+    <!--        span-->
+    <!-- END LOADER-->
+    <!-- Home Popup Section-->
+    <!--#onload-popup.modal.fade.subscribe_popup(tabindex='-1' role='dialog' aria-hidden='true')-->
+    <!--    .modal-dialog.modal-lg.modal-dialog-centered(role='document')-->
+    <!--        .modal-content-->
+    <!--            .modal-body-->
+    <!--                button.close(type='button' data-dismiss='modal' aria-label='Close')-->
+    <!--                    span(aria-hidden='true')-->
+    <!--                        i.ion-ios-close-empty-->
+    <!--                .row.no-gutters-->
+    <!--                    .col-sm-5-->
+    <!--                        .background_bg.h-100(data-img-src='assets/images/popup_img.jpg')-->
+    <!--                    .col-sm-7-->
+    <!--                        .popup_content-->
+    <!--                            .popup-text-->
+    <!--                                .heading_s4-->
+    <!--                                    h4 Subscribe and Get 25% Discount!-->
+    <!--                                p Subscribe to the newsletter to receive updates about new products.-->
+    <!--                            form(method='post')-->
+    <!--                                .form-group-->
+    <!--                                    input.form-control.rounded-0(name='email' required='' type='email' placeholder='Enter Your Email')-->
+    <!--                                .form-group-->
+    <!--                                    button.btn.btn-fill-line.btn-block.text-uppercase.rounded-0(title='Subscribe' type='submit') Subscribe-->
+    <!--                            .chek-form-->
+    <!--                                .custome-checkbox-->
+    <!--                                    input#exampleCheckbox3.form-check-input(type='checkbox' name='checkbox' value='')-->
+    <!--                                    label.form-check-label(for='exampleCheckbox3')-->
+    <!--                                        span Don&apos;t show this popup again!-->
+    <!-- End Screen Load Popup Section-->
+    <!-- START HEADER-->
+    <header class="header_wrap">
+      <div class="top-header">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-md-6">
-              <div class="header-top-left"><a href="#">GẠCH ỐP LÁT THÁI HÀ</a></div>
+            <div class="col-lg-6 col-md-8">
+              <div class="header_topbar_info">
+                <div class="header_offer"><span>GẠCH ỐP LÁT THÁI HÀ</span></div>
+                <div class="header_offer"><span><i class="fa fa-clock mr-2"></i>8:30 - 17:30</span></div>
+                <div class="header_offer"><span><i class="fa fa-phone mr-2"></i>0904506621</span></div>
+              </div>
             </div>
-            <div class="col-md-6">
-              <div class="header-top-right">
-                <ul>
-                  <li><a href="#">HotLine : 0904506621</a></li>
-                  <li><a href="#">Tài khoản ngân hàng</a></li>
-                  <li><a href="#">Hỗ trợ</a></li>
-                  <li><a href="#">Liên hệ</a></li>
-                  <li><a href="#">Báo giá</a></li>
+            <div class="col-lg-6 col-md-4">
+              <div class="d-flex align-items-center justify-content-center justify-content-md-end">
+                <div class="header_offer"><span>Giới thiệu</span></div>
+                <div class="header_offer"><span>Tin tức</span></div>
+                <div class="header_offer"><span>Tài khoản ngân hàng</span></div>
+                <div class="header_offer"><span>Liên hệ</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-wrap-body">
+        <div class="middle-header dark_skin">
+          <div class="container">
+            <div class="nav_block"><a class="navbar-brand" href="index.html"><img class="logo_light" src="https://gachtot.vn/wp-content/uploads/2022/06/gach-tot-logo.png" width="150px" alt="logo"><img class="logo_dark" src="https://gachtot.vn/wp-content/uploads/2022/06/gach-tot-logo.png" width="150px" alt="logo"></a>
+              <div class="contact_phone order-md-last"><i class="linearicons-phone-wave"></i><span>0904506621-0904506622</span></div>
+              <div class="product_search_form">
+                <form>
+                  <div class="input-group">
+                    <input class="form-control" placeholder="Tìm kiếm sản phẩm..." required="" type="text">
+                    <button class="search_btn" type="submit"><i class="linearicons-magnifier"></i></button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom_header dark_skin main_menu_uppercase">
+          <div class="container">
+            <nav class="navbar navbar-expand-lg">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false"><span class="ion-android-menu"></span></button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="dropdown dropdown-mega-menu"><a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Thương hiệu</a>
+                    <div class="dropdown-menu">
+                      <ul class="mega-menu d-lg-flex">
+                        <li class="mega-menu-col col-lg-4">
+                          <ul>
+                            <li class="dropdown-header">Bán chạy</li>
+                            <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Gạch catana</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Gạch catana</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Gạch catana</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Gạch catana</a></li>
+                          </ul>
+                        </li>
+                        <li class="mega-menu-col col-lg-4">
+                          <ul>
+                            <li class="dropdown-header">Phổ biến</li>
+                            <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Gạch bạch mã</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Gạch bạch mã</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Gạch bạch mã</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Gạch bạch mã</a></li>
+                          </ul>
+                        </li>
+                        <li class="mega-menu-col col-lg-4">
+                          <ul>
+                            <li class="dropdown-header">Gạch khác</li>
+                            <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Gạch bạch mã</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Gạch bạch mã</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Gạch bạch mã</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Gạch bạch mã</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dropdown dropdown-mega-menu"><a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Gạch lát nền</a>
+                    <div class="dropdown-menu">
+                      <ul class="mega-menu d-lg-flex">
+                        <li class="mega-menu-col col-lg-4">
+                          <ul>
+                            <li class="dropdown-header">Bán chạy</li>
+                            <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Gạch catana</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Gạch catana</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Gạch catana</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Gạch catana</a></li>
+                          </ul>
+                        </li>
+                        <li class="mega-menu-col col-lg-4">
+                          <ul>
+                            <li class="dropdown-header">Phổ biến</li>
+                            <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Gạch bạch mã</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Gạch bạch mã</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Gạch bạch mã</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Gạch bạch mã</a></li>
+                          </ul>
+                        </li>
+                        <li class="mega-menu-col col-lg-4">
+                          <ul>
+                            <li class="dropdown-header">Gạch khác</li>
+                            <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Gạch bạch mã</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Gạch bạch mã</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Gạch bạch mã</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Gạch bạch mã</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dropdown"><a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#">Gạch trang trí</a>
+                    <div class="dropdown-menu">
+                      <ul>
+                        <li><a class="dropdown-item nav-link nav_item" href="index.html">Gạch việt nhật</a></li>
+                        <li><a class="dropdown-item nav-link nav_item" href="index.html">Gạch việt nhật</a></li>
+                        <li><a class="dropdown-item nav-link nav_item" href="index.html">Gạch việt nhật</a></li>
+                        <li><a class="dropdown-item nav-link nav_item" href="index.html">Gạch việt nhật</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Gạch sân vườn</a>
+                    <div class="dropdown-menu">
+                      <ul>
+                        <li><a class="dropdown-item nav-link nav_item" href="index.html">Gạch việt nhật</a></li>
+                        <li><a class="dropdown-item nav-link nav_item" href="index.html">Gạch việt nhật</a></li>
+                        <li><a class="dropdown-item nav-link nav_item" href="index.html">Gạch việt nhật</a></li>
+                        <li><a class="dropdown-item nav-link nav_item" href="index.html">Gạch việt nhật</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Ngói lợp</a>
+                    <div class="dropdown-menu">
+                      <ul>
+                        <li><a class="dropdown-item nav-link nav_item" href="index.html">Gạch việt nhật</a></li>
+                        <li><a class="dropdown-item nav-link nav_item" href="index.html">Gạch việt nhật</a></li>
+                        <li><a class="dropdown-item nav-link nav_item" href="index.html">Gạch việt nhật</a></li>
+                        <li><a class="dropdown-item nav-link nav_item" href="index.html">Gạch việt nhật</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Phụ kiện</a>
+                    <div class="dropdown-menu">
+                      <ul>
+                        <li><a class="dropdown-item nav-link nav_item" href="index.html">Gạch việt nhật</a></li>
+                        <li><a class="dropdown-item nav-link nav_item" href="index.html">Gạch việt nhật</a></li>
+                        <li><a class="dropdown-item nav-link nav_item" href="index.html">Gạch việt nhật</a></li>
+                        <li><a class="dropdown-item nav-link nav_item" href="index.html">Gạch việt nhật</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Sản phẩm khác</a>
+                    <div class="dropdown-menu">
+                      <ul>
+                        <li><a class="dropdown-item nav-link nav_item" href="index.html">Gạch việt nhật</a></li>
+                        <li><a class="dropdown-item nav-link nav_item" href="index.html">Gạch việt nhật</a></li>
+                        <li><a class="dropdown-item nav-link nav_item" href="index.html">Gạch việt nhật</a></li>
+                        <li><a class="dropdown-item nav-link nav_item" href="index.html">Gạch việt nhật</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Sàn gỗ</a>
+                    <div class="dropdown-menu">
+                      <ul>
+                        <li><a class="dropdown-item nav-link nav_item" href="index.html">Gạch việt nhật</a></li>
+                        <li><a class="dropdown-item nav-link nav_item" href="index.html">Gạch việt nhật</a></li>
+                        <li><a class="dropdown-item nav-link nav_item" href="index.html">Gạch việt nhật</a></li>
+                        <li><a class="dropdown-item nav-link nav_item" href="index.html">Gạch việt nhật</a></li>
+                      </ul>
+                    </div>
+                  </li>
                 </ul>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="header-search-area">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-xl-2 col-lg-3">
-              <div class="logo"><a href="/"><img src="https://gachtot.vn/wp-content/uploads/2018/04/gach-tot-vn.png" alt=""></a></div>
-            </div>
-            <div class="col-xl-10 col-lg-9">
-              <div class="d-block d-sm-flex align-items-center justify-content-end">
-                <div class="header-search-wrap">
-                  <form action="#">
-                    <input type="text" placeholder="Search for product...">
-                    <button><i class="fas fa-search"></i></button>
-                  </form>
-                </div>
-                <div class="header-action">
-                  <ul>
-                    <li class="header-shop"><a href="#"><i class="flaticon-shopping-bag"></i>Giỏ hàng<span class="cart-count">0</span></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="menu-area">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="mobile-nav-toggler"><i class="fas fa-bars"></i></div>
-              <div class="menu-wrap">
-                <nav class="menu-nav">
-                  <div class="logo d-none"><a href="/"><img src="https://gachtot.vn/wp-content/uploads/2018/04/gach-tot-vn.png" alt=""></a></div>
-                  <div class="header-category"><a class="cat-toggle" href="#"><i class="fas fa-bars"></i>Browse Categories<i class="fas fa-angle-down"></i></a>
-                    <ul class="category-menu">
-                      <li><a href="product-list.html"><i class="flaticon-make-up"></i>Thương hiệu</a></li>
-                      <li class="menu-item-has-children"><a href="product-list.html"><i class="flaticon-make-up"></i>Gạch lát nền</a>
-                        <ul class="megamenu">
-                          <li class="sub-column-item"><a href="product-list.html">Loại gạch</a>
-                            <ul>
-                              <li><a href="product-list.html">Nhà tắm vệ sinh</a></li>
-                              <li><a href="product-list.html">Gạch nhà lát bếp</a></li>
-                            </ul>
-                          </li>
-                          <li class="sub-column-item"><a href="product-list.html">Kích thước</a>
-                            <ul>
-                              <li><a href="product-list.html">30x30cm</a></li>
-                              <li><a href="product-list.html">30x30cm</a></li>
-                              <li><a href="product-list.html">30x30cm</a></li>
-                              <li><a href="product-list.html">30x30cm</a></li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="menu-item-has-children"><a href="product-list.html"><i class="flaticon-make-up"></i>Gạch ốp tường</a>
-                        <ul class="megamenu">
-                          <li class="sub-column-item"><a href="product-list.html">Loại gạch</a>
-                            <ul>
-                              <li><a href="product-list.html">Nhà tắm vệ sinh</a></li>
-                              <li><a href="product-list.html">Gạch nhà lát bếp</a></li>
-                            </ul>
-                          </li>
-                          <li class="sub-column-item"><a href="product-list.html">Kích thước</a>
-                            <ul>
-                              <li><a href="product-list.html">30x30cm</a></li>
-                              <li><a href="product-list.html">30x30cm</a></li>
-                              <li><a href="product-list.html">30x30cm</a></li>
-                              <li><a href="product-list.html">30x30cm</a></li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="menu-item-has-children"><a href="product-list.html"><i class="flaticon-make-up"></i>Gạch trang trí</a>
-                        <ul class="megamenu megamenu-custom">
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                        </ul>
-                      </li>
-                      <li class="menu-item-has-children"><a href="product-list.html"><i class="flaticon-make-up"></i>Gạch sân vườn</a>
-                        <ul class="megamenu megamenu-custom">
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                        </ul>
-                      </li>
-                      <li class="menu-item-has-children"><a href="product-list.html"><i class="flaticon-make-up"></i>Sàn gỗ</a>
-                        <ul class="megamenu megamenu-custom">
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                        </ul>
-                      </li>
-                      <li class="menu-item-has-children"><a href="product-list.html"><i class="flaticon-make-up"></i>Sàn gỗ</a>
-                        <ul class="megamenu megamenu-custom">
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                        </ul>
-                      </li>
-                      <li class="menu-item-has-children"><a href="product-list.html"><i class="flaticon-make-up"></i>Sàn gỗ</a>
-                        <ul class="megamenu megamenu-custom">
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                        </ul>
-                      </li>
-                      <li class="menu-item-has-children"><a href="product-list.html"><i class="flaticon-make-up"></i>Sàn gỗ</a>
-                        <ul class="megamenu megamenu-custom">
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                        </ul>
-                      </li>
-                      <li class="menu-item-has-children"><a href="product-list.html"><i class="flaticon-make-up"></i>Sàn gỗ</a>
-                        <ul class="megamenu megamenu-custom">
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                        </ul>
-                      </li>
-                      <li class="menu-item-has-children"><a href="product-list.html"><i class="flaticon-make-up"></i>Sàn gỗ</a>
-                        <ul class="megamenu megamenu-custom">
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                        </ul>
-                      </li>
-                      <li class="menu-item-has-children"><a href="product-list.html"><i class="flaticon-make-up"></i>Sàn gỗ</a>
-                        <ul class="megamenu megamenu-custom">
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                        </ul>
-                      </li>
-                      <li class="menu-item-has-children"><a href="product-list.html"><i class="flaticon-make-up"></i>Sàn gỗ</a>
-                        <ul class="megamenu megamenu-custom">
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                          <li><a href="product-list.html">Gạch việt nhật</a></li>
-                        </ul>
-                      </li>
+              <ul class="navbar-nav attr-nav align-items-center">
+                <li><a class="nav-link search_trigger" href="javascript:void(0);"><i class="linearicons-magnifier"></i></a>
+                  <div class="search_wrap"><span class="close-search"><i class="ion-ios-close-empty"></i></span>
+                    <form>
+                      <input class="form-control" id="search_input" type="text" placeholder="Search">
+                      <button class="search_icon" type="submit"><i class="ion-ios-search-strong"></i></button>
+                    </form>
+                  </div>
+                  <div class="search_overlay"></div>
+                  <div class="search_overlay"></div>
+                </li>
+                <li class="dropdown cart_dropdown"><a class="nav-link cart_trigger" href="#" data-toggle="dropdown"><i class="linearicons-cart"></i><span class="cart_count">2</span></a>
+                  <div class="cart_box dropdown-menu dropdown-menu-right">
+                    <ul class="cart_list">
+                      <li><a class="item_remove" href="#"><i class="ion-close"></i></a><a href="#"><img src="assets/images/cart_thamb1.jpg" alt="cart_thumb1">Variable product 001</a><span class="cart_quantity">1 x<span class="cart_amount"><span class="price_symbole">$</span></span>78.00</span></li>
+                      <li><a class="item_remove" href="#"><i class="ion-close"></i></a><a href="#"><img src="assets/images/cart_thamb2.jpg" alt="cart_thumb2">Ornare sed consequat</a><span class="cart_quantity">1 x<span class="cart_amount"><span class="price_symbole">$</span></span>81.00</span></li>
                     </ul>
+                    <div class="cart_footer">
+                      <p class="cart_total"><strong>Subtotal:</strong><span class="cart_price"><span class="price_symbole">$</span></span>159.00</p>
+                      <p class="cart_buttons"><a class="btn btn-fill-line rounded-0 view-cart" href="#">View Cart</a><a class="btn btn-fill-out rounded-0 checkout" href="#">Checkout</a></p>
+                    </div>
                   </div>
-                  <div class="navbar-wrap main-menu d-none d-lg-flex">
-                    <ul class="navigation">
-                      <li class="active menu-item-has-children"><a href="#">Trang chủ</a></li>
-                      <li class="menu-item-has-children"><a href="#">Giới thiệu</a></li>
-                      <li class="menu-item-has-children"><a href="product-list.html">Danh sách sản phẩm</a></li>
-                      <li class="menu-item-has-children"><a href="#">Tin Tức</a></li>
-                      <li><a href="index-3.html">Liên Hệ</a></li>
-                    </ul>
-                  </div>
-                  <div class="header-action d-none d-md-block">
-                    <ul>
-                      <li class="header-btn"><a href="#">Báo giá<img src="assets/img/images/discount_shape.png" alt=""></a></li>
-                    </ul>
-                  </div>
-                </nav>
-              </div>
-              <!-- Mobile Menu-->
-              <div class="mobile-menu">
-                <nav class="menu-box">
-                  <div class="close-btn"><i class="fa-solid fa-xmark"></i></div>
-                  <div class="nav-logo"><a href="index.html"><img src="assets/img/logo/logo.png" alt="" title=""></a></div>
-                  <div class="menu-outer">
-                    <!-- Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
-                  </div>
-                  <div class="social-links">
-                    <ul class="clearfix">
-                      <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                      <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                      <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
-                      <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-                      <li><a href="#"><span class="fab fa-youtube"></span></a></li>
-                    </ul>
-                  </div>
-                </nav>
-              </div>
-              <div class="menu-backdrop"></div>
-              <!-- End Mobile Menu-->
-            </div>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
     </header>
-    <!-- header-area-end-->
-    <main>
-      <!-- banner-area-->
-      <section class="banner-area pt-20">
-        <div class="banner-shape"></div>
-        <div class="container">
-          <div class="row justify-content-end">
-            <div class="col-xl-9">
-              <div class="row align-items-center">
-                <div class="col-lg-6 order-0 order-lg-2">
-                  <div class="banner-img"><img src="assets/img/banner/banner_img.png" alt="">
-                    <!--.product-tooltip-->
-                    <!--    .tooltip-btn-->
-                    <!--    .tooltip-product-item.product-tooltip-item.left-->
-                    <!--        .close-btn-->
-                    <!--            i.fa-solid.fa-xmark-->
-                    <!--        .tooltip-product-thumb-->
-                    <!--            a(href='shop-details.html')-->
-                    <!--                img(src='assets/img/product/tooltip_img.jpg' alt='')-->
-                    <!--        .tooltip-product-content-->
-                    <!--            h5.title-->
-                    <!--                a(href='shop-details.html')-->
-                    <!--                    | Watch $29.08-->
-                    <!--                    span -35%-->
-                    <!--            p.order 05 orders-->
-                    <!--.product-tooltip-->
-                    <!--    .tooltip-btn-->
-                    <!--    .tooltip-product-item.product-tooltip-item.bottom.left-->
-                    <!--        .close-btn-->
-                    <!--            i.fa-solid.fa-xmark-->
-                    <!--        .tooltip-product-thumb-->
-                    <!--            a(href='shop-details.html')-->
-                    <!--                img(src='assets/img/product/tooltip_img02.jpg' alt='')-->
-                    <!--        .tooltip-product-content-->
-                    <!--            h5.title-->
-                    <!--                a(href='shop-details.html')-->
-                    <!--                    | Watch $25.08-->
-                    <!--                    span -40%-->
-                    <!--            p.order 03 orders-->
-                    <!--.product-tooltip-->
-                    <!--    .tooltip-btn-->
-                    <!--    .tooltip-product-item.product-tooltip-item-->
-                    <!--        .close-btn-->
-                    <!--            i.fa-solid.fa-xmark-->
-                    <!--        .tooltip-product-thumb-->
-                    <!--            a(href='shop-details.html')-->
-                    <!--                img(src='assets/img/product/tooltip_img.jpg' alt='')-->
-                    <!--        .tooltip-product-content-->
-                    <!--            h5.title-->
-                    <!--                a(href='shop-details.html')-->
-                    <!--                    | Watch $29.08-->
-                    <!--                    span -35%-->
-                    <!--            p.order 05 orders-->
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="banner-content">
-                    <h2 class="title"><span>GẠCH ỐP LÁT</span></h2>
-                    <h5 class="price"><span>kHO GẠCH TRÊN 1000 MẪU</span></h5>
-                    <!--a.btn(href='shop.html') Shop Now-->
+    <!-- END HEADER-->
+    <main class="main_content">
+      <!-- START SECTION BANNER-->
+      <div class="banner_section slide_medium shop_banner_slider staggered-animation-wrap">
+        <div class="carousel slide carousel-fade light_arrow" id="carouselExampleControls" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active background_bg" data-img-src="https://gachtot.vn/wp-content/uploads/2021/12/gach-op-lat-hoang-mai-gachtot.jpg">
+              <div class="banner_slide_content">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="banner_content overflow-hidden">
+                        <!--h5.mb-3.staggered-animation.font-weight-light(data-animation='slideInLeft' data-animation-delay='0.5s') Gạch ốp lát-->
+                        <!--h3.staggered-animation(data-animation='slideInLeft' data-animation-delay='1s') Kho gạch trên 1000 mẫu-->
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+            <div class="carousel-item background_bg" data-img-src="https://gachtot.vn/wp-content/uploads/2021/12/gach-op-lat-hoang-mai-gachtot.jpg">
+              <div class="banner_slide_content">
+                <div class="container">
+                  <!-- STRART CONTAINER-->
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="banner_content overflow-hidden">
+                        <!--h5.mb-3.staggered-animation.font-weight-light(data-animation='slideInLeft' data-animation-delay='0.5s') Gạch ốp lát-->
+                        <!--h3.staggered-animation(data-animation='slideInLeft' data-animation-delay='1s') Kho gạch trên 1000 mẫu-->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"><i class="ion-chevron-left"></i></a><a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"><i class="ion-chevron-right"></i></a>
         </div>
-      </section>
-      <!-- banner-area-end-->
+      </div>
+      <!-- END SECTION BANNER-->
       <section class="services">
         <div class="container">
           <div class="row">
@@ -404,160 +375,211 @@
           </div>
         </div>
       </section>
-      <!-- flash-product-area-->
-      <section class="flash-product-area pt-90 pb-60">
+      <div class="section small_pt pb_70">
         <div class="container">
           <div class="row justify-content-center">
-            <div class="col-xl-3 col-lg-4 col-md-8 col-sm-10">
-              <div class="trending-product">
-                <h3 class="title">Sản phẩm thịnh hành</h3>
-                <ul>
-                  <li class="trending-product-item mb-30">
-                    <div class="thumb"><a href="shop-details.html"><img src="https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-60x60-trung-quoc-1566B07-qrc-300x300.jpg" alt=""></a></div>
-                    <div class="content">
-                      <h6 class="title"><a href="shop-details.html">Gạch Ốp Lát 60×60 Trung Quốc 1566B07</a></h6>
-                      <h4 class="price">660.000₫ /m2</h4>
-                    </div>
-                  </li>
-                  <li class="trending-product-item mb-30">
-                    <div class="thumb"><a href="shop-details.html"><img src="https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-60x60-trung-quoc-1566B07-qrc-300x300.jpg" alt=""></a></div>
-                    <div class="content">
-                      <h6 class="title"><a href="shop-details.html">Gạch Ốp Lát 60×60 Trung Quốc 1566B07</a></h6>
-                      <h4 class="price">660.000₫ /m2</h4>
-                    </div>
-                  </li>
-                  <li class="trending-product-item mb-30">
-                    <div class="thumb"><a href="shop-details.html"><img src="https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-60x60-trung-quoc-1566B07-qrc-300x300.jpg" alt=""></a></div>
-                    <div class="content">
-                      <h6 class="title"><a href="shop-details.html">Gạch Ốp Lát 60×60 Trung Quốc 1566B07</a></h6>
-                      <h4 class="price">660.000₫ /m2</h4>
-                    </div>
-                  </li>
-                  <li class="trending-product-item mb-30">
-                    <div class="thumb"><a href="shop-details.html"><img src="https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-60x60-trung-quoc-1566B07-qrc-300x300.jpg" alt=""></a></div>
-                    <div class="content">
-                      <h6 class="title"><a href="shop-details.html">Gạch Ốp Lát 60×60 Trung Quốc 1566B07</a></h6>
-                      <h4 class="price">660.000₫ /m2</h4>
-                    </div>
-                  </li>
-                  <li class="trending-product-item mb-30">
-                    <div class="thumb"><a href="shop-details.html"><img src="https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-60x60-trung-quoc-1566B07-qrc-300x300.jpg" alt=""></a></div>
-                    <div class="content">
-                      <h6 class="title"><a href="shop-details.html">Gạch Ốp Lát 60×60 Trung Quốc 1566B07</a></h6>
-                      <h4 class="price">660.000₫ /m2</h4>
-                    </div>
-                  </li>
-                  <li class="trending-product-item mb-30">
-                    <div class="thumb"><a href="shop-details.html"><img src="https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-60x60-trung-quoc-1566B07-qrc-300x300.jpg" alt=""></a></div>
-                    <div class="content">
-                      <h6 class="title"><a href="shop-details.html">Gạch Ốp Lát 60×60 Trung Quốc 1566B07</a></h6>
-                      <h4 class="price">660.000₫ /m2</h4>
-                    </div>
-                  </li>
-                  <li class="trending-product-item mb-30">
-                    <div class="thumb"><a href="shop-details.html"><img src="https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-60x60-trung-quoc-1566B07-qrc-300x300.jpg" alt=""></a></div>
-                    <div class="content">
-                      <h6 class="title"><a href="shop-details.html">Gạch Ốp Lát 60×60 Trung Quốc 1566B07</a></h6>
-                      <h4 class="price">660.000₫ /m2</h4>
-                    </div>
-                  </li>
-                  <li class="trending-product-item mb-30">
-                    <div class="thumb"><a href="shop-details.html"><img src="https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-60x60-trung-quoc-1566B07-qrc-300x300.jpg" alt=""></a></div>
-                    <div class="content">
-                      <h6 class="title"><a href="shop-details.html">Gạch Ốp Lát 60×60 Trung Quốc 1566B07</a></h6>
-                      <h4 class="price">660.000₫ /m2</h4>
-                    </div>
-                  </li>
-                </ul>
+            <div class="col-md-6">
+              <div class="heading_s4 text-center">
+                <h2>Sản phẩm mới</h2>
               </div>
+              <p class="text-center leads">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim Nullam nunc varius.</p>
             </div>
-            <div class="col-xl-9 col-lg-8 col-md-12">
-              <div class="row">
-                <div class="col-lg-12 col-md-12">
-                  <div class="section-title title-style-two mb-30">
-                    <h4 class="title">SẢN PHẨM MỚI NHẤT</h4>
+          </div>
+          <div class="row shop_container">
+            <div class="col-lg-3 col-md-4 col-6">
+              <div class="product">
+                <div class="product_img"><a href="shop-product-detail.html"><img src="https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-an-do-60x120-asphalt-br-qrc-300x300.jpg" alt="product_img5"></a></div>
+                <div class="product_info">
+                  <h6 class="product_title"><a href="shop-product-detail.html">Gạch Ốp Lát Ấn Độ 60×120 Asphalt Br</a></h6>
+                  <div class="product_price"><span class="price">560.000đ/m2</span>
+                    <!--del $55.25-->
+                    <!--.on_sale-->
+                    <!--    span 35% Off-->
                   </div>
                 </div>
               </div>
-              <div class="flash-product-item-wrap">
-                <div class="row">
-                  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                    <div class="product-item mb-30">
-                      <div class="product-thumb"><a href="shop-details.html"><img src="https://gachtot.vn/wp-content/uploads/2021/12/6060VICTORIA001-300x300.jpg" alt=""></a></div>
-                      <div class="product-content">
-                        <h4 class="title"><a href="shop-details.html">Gạch Ốp Lát 60×60 Trung Quốc 1566B07<span>660.000đ</span></a></h4>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <div class="product">
+                <div class="product_img"><a href="shop-product-detail.html"><img src="https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-an-do-60x120-asphalt-br-qrc-300x300.jpg" alt="product_img5"></a></div>
+                <div class="product_info">
+                  <h6 class="product_title"><a href="shop-product-detail.html">Gạch Ốp Lát Ấn Độ 60×120 Asphalt Br</a></h6>
+                  <div class="product_price"><span class="price">560.000đ/m2</span>
+                    <!--del $55.25-->
+                    <!--.on_sale-->
+                    <!--    span 35% Off-->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <div class="product">
+                <div class="product_img"><a href="shop-product-detail.html"><img src="https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-an-do-60x120-asphalt-br-qrc-300x300.jpg" alt="product_img5"></a></div>
+                <div class="product_info">
+                  <h6 class="product_title"><a href="shop-product-detail.html">Gạch Ốp Lát Ấn Độ 60×120 Asphalt Br</a></h6>
+                  <div class="product_price"><span class="price">560.000đ/m2</span>
+                    <!--del $55.25-->
+                    <!--.on_sale-->
+                    <!--    span 35% Off-->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <div class="product">
+                <div class="product_img"><a href="shop-product-detail.html"><img src="https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-an-do-60x120-asphalt-br-qrc-300x300.jpg" alt="product_img5"></a></div>
+                <div class="product_info">
+                  <h6 class="product_title"><a href="shop-product-detail.html">Gạch Ốp Lát Ấn Độ 60×120 Asphalt Br</a></h6>
+                  <div class="product_price"><span class="price">560.000đ/m2</span>
+                    <!--del $55.25-->
+                    <!--.on_sale-->
+                    <!--    span 35% Off-->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <div class="product">
+                <div class="product_img"><a href="shop-product-detail.html"><img src="https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-an-do-60x120-asphalt-br-qrc-300x300.jpg" alt="product_img5"></a></div>
+                <div class="product_info">
+                  <h6 class="product_title"><a href="shop-product-detail.html">Gạch Ốp Lát Ấn Độ 60×120 Asphalt Br</a></h6>
+                  <div class="product_price"><span class="price">560.000đ/m2</span>
+                    <!--del $55.25-->
+                    <!--.on_sale-->
+                    <!--    span 35% Off-->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <div class="product">
+                <div class="product_img"><a href="shop-product-detail.html"><img src="https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-an-do-60x120-asphalt-br-qrc-300x300.jpg" alt="product_img5"></a></div>
+                <div class="product_info">
+                  <h6 class="product_title"><a href="shop-product-detail.html">Gạch Ốp Lát Ấn Độ 60×120 Asphalt Br</a></h6>
+                  <div class="product_price"><span class="price">560.000đ/m2</span>
+                    <!--del $55.25-->
+                    <!--.on_sale-->
+                    <!--    span 35% Off-->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <div class="product">
+                <div class="product_img"><a href="shop-product-detail.html"><img src="https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-an-do-60x120-asphalt-br-qrc-300x300.jpg" alt="product_img5"></a></div>
+                <div class="product_info">
+                  <h6 class="product_title"><a href="shop-product-detail.html">Gạch Ốp Lát Ấn Độ 60×120 Asphalt Br</a></h6>
+                  <div class="product_price"><span class="price">560.000đ/m2</span>
+                    <!--del $55.25-->
+                    <!--.on_sale-->
+                    <!--    span 35% Off-->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <div class="product">
+                <div class="product_img"><a href="shop-product-detail.html"><img src="https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-an-do-60x120-asphalt-br-qrc-300x300.jpg" alt="product_img5"></a></div>
+                <div class="product_info">
+                  <h6 class="product_title"><a href="shop-product-detail.html">Gạch Ốp Lát Ấn Độ 60×120 Asphalt Br</a></h6>
+                  <div class="product_price"><span class="price">560.000đ/m2</span>
+                    <!--del $55.25-->
+                    <!--.on_sale-->
+                    <!--    span 35% Off-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section pb_20">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <div class="heading_s4 text-center">
+                <h2>Sản phẩm bán chạy</h2>
+              </div>
+              <p class="text-center leads">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim Nullam nunc varius.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="product_slider carousel_slider owl-carousel owl-theme nav_style5" data-loop="true" data-dots="false" data-nav="true" data-margin="30" data-responsive="{&quot;0&quot;:{&quot;items&quot;: &quot;1&quot;}, &quot;481&quot;:{&quot;items&quot;: &quot;2&quot;}, &quot;768&quot;:{&quot;items&quot;: &quot;3&quot;}, &quot;1199&quot;:{&quot;items&quot;: &quot;4&quot;}}">
+                <div class="item">
+                  <div class="product">
+                    <div class="product_img"><a href="shop-product-detail.html"><img src="https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-an-do-60x120-asphalt-br-qrc-300x300.jpg" alt="product_img5"></a></div>
+                    <div class="product_info">
+                      <h6 class="product_title"><a href="shop-product-detail.html">Gạch Ốp Lát Ấn Độ 60×120 Asphalt Br</a></h6>
+                      <div class="product_price"><span class="price">560.000đ/m2</span>
+                        <!--del $55.25-->
+                        <!--.on_sale-->
+                        <!--    span 35% Off-->
                       </div>
                     </div>
                   </div>
-                  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                    <div class="product-item mb-30">
-                      <div class="product-thumb"><a href="shop-details.html"><img src="https://gachtot.vn/wp-content/uploads/2021/12/6060VICTORIA001-300x300.jpg" alt=""></a></div>
-                      <div class="product-content">
-                        <h4 class="title"><a href="shop-details.html">Gạch Ốp Lát 60×60 Trung Quốc 1566B07<span>660.000đ</span></a></h4>
+                </div>
+                <div class="item">
+                  <div class="product">
+                    <div class="product_img"><a href="shop-product-detail.html"><img src="https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-an-do-60x120-asphalt-br-qrc-300x300.jpg" alt="product_img5"></a></div>
+                    <div class="product_info">
+                      <h6 class="product_title"><a href="shop-product-detail.html">Gạch Ốp Lát Ấn Độ 60×120 Asphalt Br</a></h6>
+                      <div class="product_price"><span class="price">560.000đ/m2</span>
+                        <!--del $55.25-->
+                        <!--.on_sale-->
+                        <!--    span 35% Off-->
                       </div>
                     </div>
                   </div>
-                  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                    <div class="product-item mb-30">
-                      <div class="product-thumb"><a href="shop-details.html"><img src="https://gachtot.vn/wp-content/uploads/2021/12/6060VICTORIA001-300x300.jpg" alt=""></a></div>
-                      <div class="product-content">
-                        <h4 class="title"><a href="shop-details.html">Gạch Ốp Lát 60×60 Trung Quốc 1566B07<span>660.000đ</span></a></h4>
+                </div>
+                <div class="item">
+                  <div class="product">
+                    <div class="product_img"><a href="shop-product-detail.html"><img src="https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-an-do-60x120-asphalt-br-qrc-300x300.jpg" alt="product_img5"></a></div>
+                    <div class="product_info">
+                      <h6 class="product_title"><a href="shop-product-detail.html">Gạch Ốp Lát Ấn Độ 60×120 Asphalt Br</a></h6>
+                      <div class="product_price"><span class="price">560.000đ/m2</span>
+                        <!--del $55.25-->
+                        <!--.on_sale-->
+                        <!--    span 35% Off-->
                       </div>
                     </div>
                   </div>
-                  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                    <div class="product-item mb-30">
-                      <div class="product-thumb"><a href="shop-details.html"><img src="https://gachtot.vn/wp-content/uploads/2021/12/6060VICTORIA001-300x300.jpg" alt=""></a></div>
-                      <div class="product-content">
-                        <h4 class="title"><a href="shop-details.html">Gạch Ốp Lát 60×60 Trung Quốc 1566B07<span>660.000đ</span></a></h4>
+                </div>
+                <div class="item">
+                  <div class="product">
+                    <div class="product_img"><a href="shop-product-detail.html"><img src="https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-an-do-60x120-asphalt-br-qrc-300x300.jpg" alt="product_img5"></a></div>
+                    <div class="product_info">
+                      <h6 class="product_title"><a href="shop-product-detail.html">Gạch Ốp Lát Ấn Độ 60×120 Asphalt Br</a></h6>
+                      <div class="product_price"><span class="price">560.000đ/m2</span>
+                        <!--del $55.25-->
+                        <!--.on_sale-->
+                        <!--    span 35% Off-->
                       </div>
                     </div>
                   </div>
-                  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                    <div class="product-item mb-30">
-                      <div class="product-thumb"><a href="shop-details.html"><img src="https://gachtot.vn/wp-content/uploads/2021/12/6060VICTORIA001-300x300.jpg" alt=""></a></div>
-                      <div class="product-content">
-                        <h4 class="title"><a href="shop-details.html">Gạch Ốp Lát 60×60 Trung Quốc 1566B07<span>660.000đ</span></a></h4>
+                </div>
+                <div class="item">
+                  <div class="product">
+                    <div class="product_img"><a href="shop-product-detail.html"><img src="https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-an-do-60x120-asphalt-br-qrc-300x300.jpg" alt="product_img5"></a></div>
+                    <div class="product_info">
+                      <h6 class="product_title"><a href="shop-product-detail.html">Gạch Ốp Lát Ấn Độ 60×120 Asphalt Br</a></h6>
+                      <div class="product_price"><span class="price">560.000đ/m2</span>
+                        <!--del $55.25-->
+                        <!--.on_sale-->
+                        <!--    span 35% Off-->
                       </div>
                     </div>
                   </div>
-                  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                    <div class="product-item mb-30">
-                      <div class="product-thumb"><a href="shop-details.html"><img src="https://gachtot.vn/wp-content/uploads/2021/12/6060VICTORIA001-300x300.jpg" alt=""></a></div>
-                      <div class="product-content">
-                        <h4 class="title"><a href="shop-details.html">Gạch Ốp Lát 60×60 Trung Quốc 1566B07<span>660.000đ</span></a></h4>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                    <div class="product-item mb-30">
-                      <div class="product-thumb"><a href="shop-details.html"><img src="https://gachtot.vn/wp-content/uploads/2021/12/6060VICTORIA001-300x300.jpg" alt=""></a></div>
-                      <div class="product-content">
-                        <h4 class="title"><a href="shop-details.html">Gạch Ốp Lát 60×60 Trung Quốc 1566B07<span>660.000đ</span></a></h4>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                    <div class="product-item mb-30">
-                      <div class="product-thumb"><a href="shop-details.html"><img src="https://gachtot.vn/wp-content/uploads/2021/12/6060VICTORIA001-300x300.jpg" alt=""></a></div>
-                      <div class="product-content">
-                        <h4 class="title"><a href="shop-details.html">Gạch Ốp Lát 60×60 Trung Quốc 1566B07<span>660.000đ</span></a></h4>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                    <div class="product-item mb-30">
-                      <div class="product-thumb"><a href="shop-details.html"><img src="https://gachtot.vn/wp-content/uploads/2021/12/6060VICTORIA001-300x300.jpg" alt=""></a></div>
-                      <div class="product-content">
-                        <h4 class="title"><a href="shop-details.html">Gạch Ốp Lát 60×60 Trung Quốc 1566B07<span>660.000đ</span></a></h4>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                    <div class="product-item mb-30">
-                      <div class="product-thumb"><a href="shop-details.html"><img src="https://gachtot.vn/wp-content/uploads/2021/12/6060VICTORIA001-300x300.jpg" alt=""></a></div>
-                      <div class="product-content">
-                        <h4 class="title"><a href="shop-details.html">Gạch Ốp Lát 60×60 Trung Quốc 1566B07<span>660.000đ</span></a></h4>
+                </div>
+                <div class="item">
+                  <div class="product">
+                    <div class="product_img"><a href="shop-product-detail.html"><img src="https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-an-do-60x120-asphalt-br-qrc-300x300.jpg" alt="product_img5"></a></div>
+                    <div class="product_info">
+                      <h6 class="product_title"><a href="shop-product-detail.html">Gạch Ốp Lát Ấn Độ 60×120 Asphalt Br</a></h6>
+                      <div class="product_price"><span class="price">560.000đ/m2</span>
+                        <!--del $55.25-->
+                        <!--.on_sale-->
+                        <!--    span 35% Off-->
                       </div>
                     </div>
                   </div>
@@ -566,21 +588,20 @@
             </div>
           </div>
         </div>
-      </section>
-      <!-- flash-product-area-end-->
+      </div>
       <section class="banners">
         <div class="banners-content">
           <h3>GẠCH ỐP LÁT NHẬP KHẨU</h3>
           <p>PHÒNG TẮM VỆ SINH, PHÒNG KHÁCH VÀ NHÀ BẾP</p>
         </div>
       </section>
-      <section class="abouts">
+      <section class="abouts mt-5">
         <div class="container">
           <div class="row mb-5">
             <div class="col-lg-6 order-lg-1">
               <div class="about-items">
-                <h2>GẠCH LÁT NỀN</h2>
-                <h3>Nội thất – Ngoại thất</h3>
+                <h3>GẠCH LÁT NỀN</h3>
+                <h4>Nội thất – Ngoại thất</h4>
                 <div class="style-content">
                   <p>Các loại gạch lát nền Nội thất và Ngoại thất đẹp. Gạch granite và ceramic công nghệ mới, tính thẩm mỹ cao và độ bền lâu năm. Nhiều loại gạch lát cao cấp cho Biệt thự, Nhà vườn, Chung cư,…</p>
                   <p>Gạch lát Phòng khách, phòng tắm nhà vệ sinh và nhà bếp với hàng nghìn mẫu gạch men mới, cập nhật liên tục.</p><a href="product-list.html">Xem sản phẩm</a>
@@ -592,8 +613,8 @@
           <div class="row mb-5">
             <div class="col-lg-6 order-lg-2">
               <div class="about-items">
-                <h2>GẠCH LÁT NỀN</h2>
-                <h3>Gạch thẻ, Viền điểm và Trang trí</h3>
+                <h3>GẠCH LÁT NỀN</h3>
+                <h4>Gạch thẻ, Viền điểm và Trang trí</h4>
                 <div class="style-content">
                   <p>Các loại gạch lát nền Nội thất và Ngoại thất đẹp. Gạch granite và ceramic công nghệ mới, tính thẩm mỹ cao và độ bền lâu năm. Nhiều loại gạch lát cao cấp cho Biệt thự, Nhà vườn, Chung cư,…</p>
                   <p>Gạch lát Phòng khách, phòng tắm nhà vệ sinh và nhà bếp với hàng nghìn mẫu gạch men mới, cập nhật liên tục.</p><a href="product-list.html">Xem sản phẩm</a>
@@ -605,8 +626,8 @@
           <div class="row mb-5">
             <div class="col-lg-6 order-lg-1">
               <div class="about-items">
-                <h2>GẠCH TRANG TRÍ</h2>
-                <h3>Gạch ốp trang trí kiến trúc</h3>
+                <h3>GẠCH TRANG TRÍ</h3>
+                <h4>Gạch ốp trang trí kiến trúc</h4>
                 <div class="style-content">
                   <p>Các loại gạch lát nền Nội thất và Ngoại thất đẹp. Gạch granite và ceramic công nghệ mới, tính thẩm mỹ cao và độ bền lâu năm. Nhiều loại gạch lát cao cấp cho Biệt thự, Nhà vườn, Chung cư,…</p>
                   <p>Gạch lát Phòng khách, phòng tắm nhà vệ sinh và nhà bếp với hàng nghìn mẫu gạch men mới, cập nhật liên tục.</p><a href="product-list.html">Xem sản phẩm</a>
@@ -617,251 +638,313 @@
           </div>
         </div>
       </section>
-      <!-- features-area-end-->
-      <!-- blog-area-->
-      <section class="blog-area pt-55 pb-60">
+      <div class="section small_pt pb_70">
         <div class="container">
-          <div class="row mb-40">
-            <div class="col-lg-6 col-md-6">
-              <div class="section-title">
-                <h2 class="title">TIN TỨC MỚI</h2>
+          <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8">
+              <div class="heading_s1 text-center">
+                <h2>Tin tức mới</h2>
               </div>
-            </div>
-            <div class="col-lg-6 col-md-6">
-              <div class="view-btn text-end"><a href="blog.html">Xem tất cả bài viết<i class="fa-solid fa-angle-right"></i></a></div>
+              <p class="leads text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
             </div>
           </div>
           <div class="row justify-content-center">
-            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-9">
-              <div class="blog-item mb-30">
-                <div class="blog-thumb"><a href="blog-details.html"><img src="assets/img/blog/blog_img01.jpg" alt=""></a></div>
-                <div class="blog-content">
-                  <h4 class="title"><a href="blog-details.html">The New Sony Solo the Cinematic Dream Brings</a></h4>
-                  <p>
-                    Lorem Ipsum is simply dumy text the printing and industry orem Ipsum been industry&apos;s standard
-                    dummy.
-                  </p>
-                  <div class="blog-meta">
-                    <ul>
-                      <li><a href="blog-details.html">Đọc tiếp</a></li>
+            <div class="col-lg-4 col-md-6">
+              <div class="blog_post blog_style1 box_shadow1">
+                <div class="blog_img"><a href="blog-single.html"><img src="https://bestwebcreator.com/shopwise/demo/assets/images/furniture_blog_img1.jpg" alt="furniture_blog_img1"></a></div>
+                <div class="blog_content bg-white">
+                  <div class="blog_text">
+                    <h5 class="blog_title"><a href="blog-single.html">But I must explain to you how all this mistaken idea</a></h5>
+                    <ul class="list_none blog_meta">
+                      <li><a href="#"><i class="ti-calendar"></i> April 14, 2018</a></li>
+                      <li><a href="#"><i class="ti-comments"></i> 2 Comment</a></li>
                     </ul>
+                    <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn&apos;t anything hidden in the text</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-9">
-              <div class="blog-item mb-30">
-                <div class="blog-thumb"><a href="blog-details.html"><img src="assets/img/blog/blog_img01.jpg" alt=""></a></div>
-                <div class="blog-content">
-                  <h4 class="title"><a href="blog-details.html">The New Sony Solo the Cinematic Dream Brings</a></h4>
-                  <p>
-                    Lorem Ipsum is simply dumy text the printing and industry orem Ipsum been industry&apos;s standard
-                    dummy.
-                  </p>
-                  <div class="blog-meta">
-                    <ul>
-                      <li><a href="blog-details.html">Đọc tiếp</a></li>
+            <div class="col-lg-4 col-md-6">
+              <div class="blog_post blog_style1 box_shadow1">
+                <div class="blog_img"><a href="blog-single.html"><img src="https://bestwebcreator.com/shopwise/demo/assets/images/furniture_blog_img1.jpg" alt="furniture_blog_img1"></a></div>
+                <div class="blog_content bg-white">
+                  <div class="blog_text">
+                    <h5 class="blog_title"><a href="blog-single.html">But I must explain to you how all this mistaken idea</a></h5>
+                    <ul class="list_none blog_meta">
+                      <li><a href="#"><i class="ti-calendar"></i> April 14, 2018</a></li>
+                      <li><a href="#"><i class="ti-comments"></i> 2 Comment</a></li>
                     </ul>
+                    <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn&apos;t anything hidden in the text</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-9">
-              <div class="blog-item mb-30">
-                <div class="blog-thumb"><a href="blog-details.html"><img src="assets/img/blog/blog_img01.jpg" alt=""></a></div>
-                <div class="blog-content">
-                  <h4 class="title"><a href="blog-details.html">The New Sony Solo the Cinematic Dream Brings</a></h4>
-                  <p>
-                    Lorem Ipsum is simply dumy text the printing and industry orem Ipsum been industry&apos;s standard
-                    dummy.
-                  </p>
-                  <div class="blog-meta">
-                    <ul>
-                      <li><a href="blog-details.html">Đọc tiếp</a></li>
+            <div class="col-lg-4 col-md-6">
+              <div class="blog_post blog_style1 box_shadow1">
+                <div class="blog_img"><a href="blog-single.html"><img src="https://bestwebcreator.com/shopwise/demo/assets/images/furniture_blog_img1.jpg" alt="furniture_blog_img1"></a></div>
+                <div class="blog_content bg-white">
+                  <div class="blog_text">
+                    <h5 class="blog_title"><a href="blog-single.html">But I must explain to you how all this mistaken idea</a></h5>
+                    <ul class="list_none blog_meta">
+                      <li><a href="#"><i class="ti-calendar"></i> April 14, 2018</a></li>
+                      <li><a href="#"><i class="ti-comments"></i> 2 Comment</a></li>
                     </ul>
+                    <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn&apos;t anything hidden in the text</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-9">
-              <div class="blog-item mb-30">
-                <div class="blog-thumb"><a href="blog-details.html"><img src="assets/img/blog/blog_img01.jpg" alt=""></a></div>
-                <div class="blog-content">
-                  <h4 class="title"><a href="blog-details.html">The New Sony Solo the Cinematic Dream Brings</a></h4>
-                  <p>
-                    Lorem Ipsum is simply dumy text the printing and industry orem Ipsum been industry&apos;s standard
-                    dummy.
-                  </p>
-                  <div class="blog-meta">
-                    <ul>
-                      <li><a href="blog-details.html">Đọc tiếp</a></li>
+            <div class="col-lg-4 col-md-6">
+              <div class="blog_post blog_style1 box_shadow1">
+                <div class="blog_img"><a href="blog-single.html"><img src="https://bestwebcreator.com/shopwise/demo/assets/images/furniture_blog_img1.jpg" alt="furniture_blog_img1"></a></div>
+                <div class="blog_content bg-white">
+                  <div class="blog_text">
+                    <h5 class="blog_title"><a href="blog-single.html">But I must explain to you how all this mistaken idea</a></h5>
+                    <ul class="list_none blog_meta">
+                      <li><a href="#"><i class="ti-calendar"></i> April 14, 2018</a></li>
+                      <li><a href="#"><i class="ti-comments"></i> 2 Comment</a></li>
                     </ul>
+                    <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn&apos;t anything hidden in the text</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-9">
-              <div class="blog-item mb-30">
-                <div class="blog-thumb"><a href="blog-details.html"><img src="assets/img/blog/blog_img01.jpg" alt=""></a></div>
-                <div class="blog-content">
-                  <h4 class="title"><a href="blog-details.html">The New Sony Solo the Cinematic Dream Brings</a></h4>
-                  <p>
-                    Lorem Ipsum is simply dumy text the printing and industry orem Ipsum been industry&apos;s standard
-                    dummy.
-                  </p>
-                  <div class="blog-meta">
-                    <ul>
-                      <li><a href="blog-details.html">Đọc tiếp</a></li>
+            <div class="col-lg-4 col-md-6">
+              <div class="blog_post blog_style1 box_shadow1">
+                <div class="blog_img"><a href="blog-single.html"><img src="https://bestwebcreator.com/shopwise/demo/assets/images/furniture_blog_img1.jpg" alt="furniture_blog_img1"></a></div>
+                <div class="blog_content bg-white">
+                  <div class="blog_text">
+                    <h5 class="blog_title"><a href="blog-single.html">But I must explain to you how all this mistaken idea</a></h5>
+                    <ul class="list_none blog_meta">
+                      <li><a href="#"><i class="ti-calendar"></i> April 14, 2018</a></li>
+                      <li><a href="#"><i class="ti-comments"></i> 2 Comment</a></li>
                     </ul>
+                    <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn&apos;t anything hidden in the text</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-9">
-              <div class="blog-item mb-30">
-                <div class="blog-thumb"><a href="blog-details.html"><img src="assets/img/blog/blog_img01.jpg" alt=""></a></div>
-                <div class="blog-content">
-                  <h4 class="title"><a href="blog-details.html">The New Sony Solo the Cinematic Dream Brings</a></h4>
-                  <p>
-                    Lorem Ipsum is simply dumy text the printing and industry orem Ipsum been industry&apos;s standard
-                    dummy.
-                  </p>
-                  <div class="blog-meta">
-                    <ul>
-                      <li><a href="blog-details.html">Đọc tiếp</a></li>
+            <div class="col-lg-4 col-md-6">
+              <div class="blog_post blog_style1 box_shadow1">
+                <div class="blog_img"><a href="blog-single.html"><img src="https://bestwebcreator.com/shopwise/demo/assets/images/furniture_blog_img1.jpg" alt="furniture_blog_img1"></a></div>
+                <div class="blog_content bg-white">
+                  <div class="blog_text">
+                    <h5 class="blog_title"><a href="blog-single.html">But I must explain to you how all this mistaken idea</a></h5>
+                    <ul class="list_none blog_meta">
+                      <li><a href="#"><i class="ti-calendar"></i> April 14, 2018</a></li>
+                      <li><a href="#"><i class="ti-comments"></i> 2 Comment</a></li>
                     </ul>
+                    <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn&apos;t anything hidden in the text</p>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- blog-area-end-->
-      <section class="newsletter-area pb-90">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="newsletter-wrap">
-                <div class="newsletter-content">
-                  <h2 class="title">Để lại Email của bạn để được tư vấn !</h2>
-                  <p>Get 10% off new collection special Investigationes demonstraverunt</p>
-                </div>
-                <div class="newsletter-form">
-                  <form action="#">
-                    <input type="text" placeholder="Your email here...">
-                    <button type="submit">Subscribe</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <!-- footer-area-->
-    <footer>
-      <div class="footer-area">
-        <div class="footer-top pt-60 pb-40">
-          <div class="container">
-            <div class="row">
-              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-                <div class="footer-widget mb-30">
-                  <div class="f-logo mb-25"><a href="index.html"><img src="https://gachtot.vn/wp-content/uploads/2018/04/gach-tot-vn.png" alt=""></a></div>
-                  <div class="footer-content"><span>Got Question? Call us 24/7</span><a class="contact" href="tel:0123456">0-333-6666-7777</a>
-                    <p>Register now to get updates on pronot get up ions &amp; coupons ster now toon.</p>
-                  </div>
-                  <div class="footer-social">
-                    <ul>
-                      <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                      <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                      <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-4">
-                <div class="footer-widget mb-30">
-                  <div class="fw-title mb-20">
-                    <h2 class="title">INFORMATION</h2>
-                  </div>
-                  <div class="fw-link">
-                    <ul>
-                      <li><a href="contact.html">About Us</a></li>
-                      <li><a href="contact.html">Careers</a></li>
-                      <li><a href="contact.html">Orders &amp; Shipping</a></li>
-                      <li><a href="contact.html">Office Supplies</a></li>
-                      <li><a href="contact.html">Contact Us</a></li>
-                      <li><a href="contact.html">Customer Service</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-lg-2 col-md-6 col-sm-6">
-                <div class="footer-widget mb-30">
-                  <div class="fw-title mb-20">
-                    <h2 class="title">MY ACCOUNT</h2>
-                  </div>
-                  <div class="fw-link">
-                    <ul>
-                      <li><a href="shop.html">Track My Order</a></li>
-                      <li><a href="shop.html">View Cart</a></li>
-                      <li><a href="contact.html">Sign In</a></li>
-                      <li><a href="contact.html">Help</a></li>
-                      <li><a href="shop.html">My Wishlist</a></li>
-                      <li><a href="contact.html">Privacy Policy</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                <div class="footer-widget mb-30">
-                  <div class="fw-title mb-20">
-                    <h2 class="title">CUSTOMER SERVICE</h2>
-                  </div>
-                  <div class="fw-link">
-                    <ul>
-                      <li><a href="vendor-setting.html">Payment Methods</a></li>
-                      <li><a href="contact.html">Money-back guarantee!</a></li>
-                      <li><a href="contact.html">Products Returns</a></li>
-                      <li><a href="contact.html">Support Center</a></li>
-                      <li><a href="vendor-list.html">Shipping</a></li>
-                      <li><a href="contact.html">Term and Conditions</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-6 col-md-7">
-                <div class="copyright-text">
-                  <p>Copyright &copy;2022 Olle All Rights Reserved</p>
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-5">
-                <div class="cart-img text-end"><img src="assets/img/images/cart_img.jpg" alt=""></div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- START SECTION CLIENT LOGO-->
+      <div class="section small_pt">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="heading_tab_header">
+                <div class="heading_s2">
+                  <h2>Thương hiệu nổi bật</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="client_logo carousel_slider owl-carousel owl-theme nav_style3" data-dots="false" data-nav="true" data-margin="30" data-loop="true" data-autoplay="true" data-responsive="{&quot;0&quot;:{&quot;items&quot;: &quot;2&quot;}, &quot;480&quot;:{&quot;items&quot;: &quot;3&quot;}, &quot;767&quot;:{&quot;items&quot;: &quot;4&quot;}, &quot;991&quot;:{&quot;items&quot;: &quot;5&quot;}}">
+                <div class="item">
+                  <div class="cl_logo"><img src="assets/images/cl_logo1.png" alt="cl_logo"></div>
+                </div>
+                <div class="item">
+                  <div class="cl_logo"><img src="assets/images/cl_logo2.png" alt="cl_logo"></div>
+                </div>
+                <div class="item">
+                  <div class="cl_logo"><img src="assets/images/cl_logo3.png" alt="cl_logo"></div>
+                </div>
+                <div class="item">
+                  <div class="cl_logo"><img src="assets/images/cl_logo4.png" alt="cl_logo"></div>
+                </div>
+                <div class="item">
+                  <div class="cl_logo"><img src="assets/images/cl_logo5.png" alt="cl_logo"></div>
+                </div>
+                <div class="item">
+                  <div class="cl_logo"><img src="assets/images/cl_logo6.png" alt="cl_logo"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END SECTION CLIENT LOGO-->
+    </main>
+    <!-- START FOOTER-->
+    <footer class="bg_gray">
+      <div class="footer_top small_pt pb_20">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+              <div class="widget">
+                <div class="footer_logo"><a href="#"><img src="assets/images/logo_dark.png" alt="logo"></a></div>
+                <p class="mb-3">
+                  If you are going to use of Lorem Ipsum need to be sure there isn&apos;t anything
+                  hidden of text
+                </p>
+                <ul class="contact_info">
+                  <li><i class="ti-location-pin"></i>
+                    <p>123 Street, Old Trafford, NewYork, USA</p>
+                  </li>
+                  <li><i class="ti-email"></i><a href="mailto:info@sitename.com">info@sitename.com</a></li>
+                  <li><i class="ti-mobile"></i>
+                    <p>+ 457 789 789 65</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6">
+              <div class="widget">
+                <h6 class="widget_title">Useful Links</h6>
+                <ul class="widget_links">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Location</a></li>
+                  <li><a href="#">Affiliates</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6">
+              <div class="widget">
+                <h6 class="widget_title">My Account</h6>
+                <ul class="widget_links">
+                  <li><a href="#">My Account</a></li>
+                  <li><a href="#">Discount</a></li>
+                  <li><a href="#">Returns</a></li>
+                  <li><a href="#">Orders History</a></li>
+                  <li><a href="#">Order Tracking</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <div class="widget">
+                <h6 class="widget_title">Instagram</h6>
+                <ul class="widget_instafeed instafeed_col4">
+                  <li><a href="#"><img src="assets/images/insta_img1.jpg" alt="insta_img"><span class="insta_icon"><i class="ti-instagram"></i></span></a></li>
+                  <li><a href="#"><img src="assets/images/insta_img2.jpg" alt="insta_img"><span class="insta_icon"><i class="ti-instagram"></i></span></a></li>
+                  <li><a href="#"><img src="assets/images/insta_img3.jpg" alt="insta_img"><span class="insta_icon"><i class="ti-instagram"></i></span></a></li>
+                  <li><a href="#"><img src="assets/images/insta_img4.jpg" alt="insta_img"><span class="insta_icon"><i class="ti-instagram"></i></span></a></li>
+                  <li><a href="#"><img src="assets/images/insta_img5.jpg" alt="insta_img"><span class="insta_icon"><i class="ti-instagram"></i></span></a></li>
+                  <li><a href="#"><img src="assets/images/insta_img6.jpg" alt="insta_img"><span class="insta_icon"><i class="ti-instagram"></i></span></a></li>
+                  <li><a href="#"><img src="assets/images/insta_img7.jpg" alt="insta_img"><span class="insta_icon"><i class="ti-instagram"></i></span></a></li>
+                  <li><a href="#"><img src="assets/images/insta_img8.jpg" alt="insta_img"><span class="insta_icon"><i class="ti-instagram"></i></span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="middle_footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="shopping_info">
+                <div class="row justify-content-center">
+                  <div class="col-md-4">
+                    <div class="icon_box icon_box_style2">
+                      <div class="icon"><i class="flaticon-shipped"></i></div>
+                      <div class="icon_box_content">
+                        <h5>Free Delivery</h5>
+                        <p>Phasellus blandit massa enim elit of passage varius nunc.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="icon_box icon_box_style2">
+                      <div class="icon"><i class="flaticon-money-back"></i></div>
+                      <div class="icon_box_content">
+                        <h5>30 Day Returns Guarantee</h5>
+                        <p>Phasellus blandit massa enim elit of passage varius nunc.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="icon_box icon_box_style2">
+                      <div class="icon"><i class="flaticon-support"></i></div>
+                      <div class="icon_box_content">
+                        <h5>27/4 Online Support</h5>
+                        <p>Phasellus blandit massa enim elit of passage varius nunc.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom_footer border-top-tran">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-4">
+              <p class="mb-lg-0 text-center">&copy; 2020 All Rights Reserved by Bestwebcreator</p>
+            </div>
+            <div class="col-lg-4 order-lg-first">
+              <div class="widget mb-lg-0">
+                <ul class="social_icons text-center text-lg-left">
+                  <li><a class="sc_facebook" href="#"><i class="ion-social-facebook"></i></a></li>
+                  <li><a class="sc_twitter" href="#"><i class="ion-social-twitter"></i></a></li>
+                  <li><a class="sc_google" href="#"><i class="ion-social-googleplus"></i></a></li>
+                  <li><a class="sc_youtube" href="#"><i class="ion-social-youtube-outline"></i></a></li>
+                  <li><a class="sc_instagram" href="#"><i class="ion-social-instagram-outline"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <ul class="footer_payment text-center text-lg-right">
+                <li><a href="#"><img src="assets/images/visa.png" alt="visa"></a></li>
+                <li><a href="#"><img src="assets/images/discover.png" alt="discover"></a></li>
+                <li><a href="#"><img src="assets/images/master_card.png" alt="master_card"></a></li>
+                <li><a href="#"><img src="assets/images/paypal.png" alt="paypal"></a></li>
+                <li><a href="#"><img src="assets/images/amarican_express.png" alt="amarican_express"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
-    <!-- footer-area-end-->
+    <!-- END FOOTER--><a class="scrollup" href="#" style="display: none;"><i class="ion-ios-arrow-up"></i></a>
     <!-- JS here-->
-    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/isotope.pkgd.min.js"></script>
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <!-- Latest jQuery-->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- popper min js-->
+    <script src="assets/js/popper.min.js"></script>
+    <!-- Latest compiled and minified Bootstrap-->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- owl-carousel min js-->
+    <script src="assets/owlcarousel/js/owl.carousel.min.js"></script>
+    <!-- magnific-popup min js-->
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <!-- waypoints min js-->
+    <script src="assets/js/waypoints.min.js"></script>
+    <!-- parallax js-->
+    <script src="assets/js/parallax.js"></script>
+    <!-- countdown js-->
     <script src="assets/js/jquery.countdown.min.js"></script>
-    <script src="assets/js/jquery.mCustomScrollbar.min.js"></script>
-    <script src="assets/js/jquery-ui.min.js"></script>
+    <!-- imagesloaded js-->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <!-- isotope min js-->
+    <script src="assets/js/isotope.min.js"></script>
+    <!-- jquery.dd.min js-->
+    <script src="assets/js/jquery.dd.min.js"></script>
+    <!-- slick js-->
     <script src="assets/js/slick.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <!-- elevatezoom js-->
+    <script src="assets/js/jquery.elevatezoom.js"></script>
+    <!-- scripts js-->
+    <script src="assets/js/scripts.js"></script>
   </body>
 </html>

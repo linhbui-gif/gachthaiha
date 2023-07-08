@@ -1,0 +1,78 @@
+extends includes/layouts/Guest
+block pages
+    include includes/containers/breadcrumb/breadcrumb
+    // START SECTION SHOP
+    .section
+        .container
+            .row
+                .col-lg-9
+                    .row.align-items-center.mb-4.pb-1
+                        .col-12
+                            .product_header
+                                .product_header_left
+                                    .custom_select
+                                        select.form-control.form-control-sm
+                                            option(value='order') Default sorting
+                                            option(value='popularity') Sort by popularity
+                                            option(value='date') Sort by newness
+                                            option(value='price') Sort by price: low to high
+                                            option(value='price-desc') Sort by price: high to low
+
+
+                    .row.shop_container.grid
+                        each item in [1,2,3,4,5,6]
+                            .col-md-4.col-6
+                                include includes/components/shop/product-item
+                    .row
+                        .col-12
+                            ul.pagination.mt-3.justify-content-center.pagination_style1
+                                li.page-item.active
+                                    a.page-link(href='#') 1
+                                li.page-item
+                                    a.page-link(href='#') 2
+                                li.page-item
+                                    a.page-link(href='#') 3
+                                li.page-item
+                                    a.page-link(href='#')
+                                        i.linearicons-arrow-right
+                .col-lg-3.order-lg-first.mt-4.pt-2.mt-lg-0.pt-lg-0
+                    .sidebar
+                        .widget.mt-2
+                            h5.widget_title Chọn kích thước
+                            ul.widget_categories
+                                each item in [1,2,3,4,5]
+                                    li
+                                        a(href='#')
+                                            span.categories_name 15x80cm
+                                            span.categories_num (9)
+                    .widget.mt-2
+                        h5.widget_title Loại sản phẩm
+                        ul.widget_categories
+                            each item in [1,2,3,4,5]
+                                li
+                                    a(href='#')
+                                        span.categories_name Gạch vân đá Marble
+                                        span.categories_num (9)
+                    .widget.mt-2
+                        h5.widget_title Bề mặt
+                        ul.widget_categories
+                            each item in [1,2,3,4,5]
+                                li
+                                    a(href='#')
+                                        span.categories_name Men mờ
+                                        span.categories_num (9)
+                    .widget.mt-2
+                        h5.widget_title Bạn vừa xem
+                        ul.widget_recent_post
+                            each item in [1,2,3,4,5]
+                                li
+                                    .post_img
+                                        a(href='#')
+                                            img(src='https://gachtot.vn/wp-content/uploads/2023/07/gach-trung-quoc-90x180-TQ18928-qrc-300x300.jpg' alt='shop_small1')
+                                    .post_content
+                                        h6.product_title
+                                            a(href='shop-product-detail.html') Gạch Ốp Lát 90×180 Trung Quốc TQ18928
+                                        .product_price
+                                            span.price 750.000₫ /m2
+                                            //del $95.00
+

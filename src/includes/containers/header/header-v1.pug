@@ -1,43 +1,187 @@
-header#sticky-header
-    .header-top-area
+// START HEADER
+header.header_wrap
+    .top-header
         .container
             .row.align-items-center
-                .col-md-6
-                    .header-top-left
-                        a(href='#') GẠCH ỐP LÁT THÁI HÀ
-                .col-md-6
-                    .header-top-right
-                        ul
-                            li
-                                a(href='#') HotLine : 0904506621
-                            li
-                                a(href='#') Tài khoản ngân hàng
-                            li
-                                a(href='#') Hỗ trợ
-                            li
-                                a(href='#') Liên hệ
-                            li
-                                a(href='#') Báo giá
-    .header-search-area
-        .container
-            .row.align-items-center
-                .col-xl-2.col-lg-3
-                    .logo
-                        a(href='/')
-                            img(src='https://gachtot.vn/wp-content/uploads/2018/04/gach-tot-vn.png' alt='')
-                .col-xl-10.col-lg-9
-                    .d-block.d-sm-flex.align-items-center.justify-content-end
-                        .header-search-wrap
-                            form(action='#')
-                                input(type='text' placeholder='Search for product...')
-                                button
-                                    i.fas.fa-search
-                        .header-action
-                            ul
-                                li.header-shop
-                                    a(href='#')
-                                        i.flaticon-shopping-bag
-                                        | Giỏ hàng
-                                        span.cart-count 0
-    include ./menu-area-v1
-// header-area-end
+                .col-lg-6.col-md-8
+                    .header_topbar_info
+                        .header_offer
+                            span GẠCH ỐP LÁT THÁI HÀ
+                        .header_offer
+                            span
+                              i.fa.fa-clock.mr-2
+                              | 8:30 - 17:30
+                        .header_offer
+                            span
+                                i.fa.fa-phone.mr-2
+                                | 0904506621
+                .col-lg-6.col-md-4
+                    .d-flex.align-items-center.justify-content-center.justify-content-md-end
+                        .header_offer
+                            span Giới thiệu
+                        .header_offer
+                            span Tin tức
+                        .header_offer
+                            span Tài khoản ngân hàng
+                        .header_offer
+                            span Liên hệ
+    .header-wrap-body
+        .middle-header.dark_skin
+            .container
+                .nav_block
+                    a.navbar-brand(href='index.html')
+                        img.logo_light(src='https://gachtot.vn/wp-content/uploads/2022/06/gach-tot-logo.png' width="150px" alt='logo')
+                        img.logo_dark(src='https://gachtot.vn/wp-content/uploads/2022/06/gach-tot-logo.png' width="150px" alt='logo')
+                    .contact_phone.order-md-last
+                        i.linearicons-phone-wave
+                        span 0904506621-0904506622
+                    .product_search_form
+                        form
+                            .input-group
+                                input.form-control(placeholder='Tìm kiếm sản phẩm...' required='' type='text')
+                                button.search_btn(type='submit')
+                                    i.linearicons-magnifier
+        .bottom_header.dark_skin.main_menu_uppercase
+            .container
+                nav.navbar.navbar-expand-lg
+                    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-expanded='false')
+                        span.ion-android-menu
+                    #navbarSupportedContent.collapse.navbar-collapse.justify-content-end
+                        ul.navbar-nav
+                            li.dropdown.dropdown-mega-menu
+                                a.dropdown-toggle.nav-link(href='#' data-toggle='dropdown') Thương hiệu
+                                .dropdown-menu
+                                    ul.mega-menu.d-lg-flex
+                                        li.mega-menu-col.col-lg-4
+                                            ul
+                                                li.dropdown-header Bán chạy
+                                                each item in [1,2,3,4]
+                                                    li
+                                                        a.dropdown-item.nav-link.nav_item(href='shop-list-left-sidebar.html') Gạch catana
+                                        li.mega-menu-col.col-lg-4
+                                            ul
+                                                li.dropdown-header Phổ biến
+                                                each item in [1,2,3,4]
+                                                    li
+                                                        a.dropdown-item.nav-link.nav_item(href='shop-list-left-sidebar.html') Gạch bạch mã
+                                        li.mega-menu-col.col-lg-4
+                                            ul
+                                                li.dropdown-header Gạch khác
+                                                each item in [1,2,3,4]
+                                                    li
+                                                        a.dropdown-item.nav-link.nav_item(href='shop-list-left-sidebar.html') Gạch bạch mã
+                            li.dropdown.dropdown-mega-menu
+                                a.dropdown-toggle.nav-link(href='#' data-toggle='dropdown') Gạch lát nền
+                                .dropdown-menu
+                                    ul.mega-menu.d-lg-flex
+                                        li.mega-menu-col.col-lg-4
+                                            ul
+                                                li.dropdown-header Bán chạy
+                                                each item in [1,2,3,4]
+                                                    li
+                                                        a.dropdown-item.nav-link.nav_item(href='shop-list-left-sidebar.html') Gạch catana
+                                        li.mega-menu-col.col-lg-4
+                                            ul
+                                                li.dropdown-header Phổ biến
+                                                each item in [1,2,3,4]
+                                                    li
+                                                        a.dropdown-item.nav-link.nav_item(href='shop-list-left-sidebar.html') Gạch bạch mã
+                                        li.mega-menu-col.col-lg-4
+                                            ul
+                                                li.dropdown-header Gạch khác
+                                                each item in [1,2,3,4]
+                                                    li
+                                                        a.dropdown-item.nav-link.nav_item(href='shop-list-left-sidebar.html') Gạch bạch mã
+                            li.dropdown
+                                a.nav-link.dropdown-toggle.active(data-toggle='dropdown' href='#') Gạch trang trí
+                                .dropdown-menu
+                                    ul
+                                        each item in [1,2,3,4]
+                                            li
+                                                a.dropdown-item.nav-link.nav_item(href='index.html') Gạch việt nhật
+                            li.dropdown
+                                a.dropdown-toggle.nav-link(href='#' data-toggle='dropdown') Gạch sân vườn
+                                .dropdown-menu
+                                    ul
+                                        each item in [1,2,3,4]
+                                            li
+                                                a.dropdown-item.nav-link.nav_item(href='index.html') Gạch việt nhật
+                            li.dropdown
+                                a.dropdown-toggle.nav-link(href='#' data-toggle='dropdown') Ngói lợp
+                                .dropdown-menu
+                                    ul
+                                        each item in [1,2,3,4]
+                                            li
+                                                a.dropdown-item.nav-link.nav_item(href='index.html') Gạch việt nhật
+                            li.dropdown
+                                a.dropdown-toggle.nav-link(href='#' data-toggle='dropdown') Phụ kiện
+                                .dropdown-menu
+                                    ul
+                                        each item in [1,2,3,4]
+                                            li
+                                                a.dropdown-item.nav-link.nav_item(href='index.html') Gạch việt nhật
+                            li.dropdown
+                                a.dropdown-toggle.nav-link(href='#' data-toggle='dropdown') Sản phẩm khác
+                                .dropdown-menu
+                                    ul
+                                        each item in [1,2,3,4]
+                                            li
+                                                a.dropdown-item.nav-link.nav_item(href='index.html') Gạch việt nhật
+                            li.dropdown
+                                a.dropdown-toggle.nav-link(href='#' data-toggle='dropdown') Sàn gỗ
+                                .dropdown-menu
+                                    ul
+                                        each item in [1,2,3,4]
+                                            li
+                                                a.dropdown-item.nav-link.nav_item(href='index.html') Gạch việt nhật
+                    ul.navbar-nav.attr-nav.align-items-center
+                        li
+                            a.nav-link.search_trigger(href='javascript:void(0);')
+                                i.linearicons-magnifier
+                            .search_wrap
+                                span.close-search
+                                    i.ion-ios-close-empty
+                                form
+                                    input#search_input.form-control(type='text' placeholder='Search')
+                                    button.search_icon(type='submit')
+                                        i.ion-ios-search-strong
+                            .search_overlay
+                            .search_overlay
+                        li.dropdown.cart_dropdown
+                            a.nav-link.cart_trigger(href='#' data-toggle='dropdown')
+                                i.linearicons-cart
+                                span.cart_count 2
+                            .cart_box.dropdown-menu.dropdown-menu-right
+                                ul.cart_list
+                                    li
+                                        a.item_remove(href='#')
+                                            i.ion-close
+                                        a(href='#')
+                                            img(src='assets/images/cart_thamb1.jpg' alt='cart_thumb1')
+                                            | Variable product 001
+                                        span.cart_quantity
+                                            | 1 x
+                                            span.cart_amount
+                                                span.price_symbole $
+                                            | 78.00
+                                    li
+                                        a.item_remove(href='#')
+                                            i.ion-close
+                                        a(href='#')
+                                            img(src='assets/images/cart_thamb2.jpg' alt='cart_thumb2')
+                                            | Ornare sed consequat
+                                        span.cart_quantity
+                                            | 1 x
+                                            span.cart_amount
+                                                span.price_symbole $
+                                            | 81.00
+                                .cart_footer
+                                    p.cart_total
+                                        strong Subtotal:
+                                        span.cart_price
+                                            span.price_symbole $
+                                        | 159.00
+                                    p.cart_buttons
+                                        a.btn.btn-fill-line.rounded-0.view-cart(href='#') View Cart
+                                        a.btn.btn-fill-out.rounded-0.checkout(href='#') Checkout
+// END HEADER

@@ -43,57 +43,62 @@
 .services_item:hover .services_item-icon svg{
   fill: white;
 }
-.banners{
+
+.banners {
   background: url("https://gachtot.vn/wp-content/uploads/2018/04/background-demo.jpg");
   height: 50vh;
   display: flex;
-  position: relative;
-  &:after{
-    position: absolute;
-    content: "";
-    width: 100%;
-    z-index: 1;
-    height: 100%;
-    left: 0;
-    background: rgba(255, 255, 255, 0.54);
-  }
-  &-content{
-    z-index: 34;
-    max-width: 40vw;
-    padding: 40px;
-    background: rgba(255, 255, 255, 0.744);
-    border-radius: 10px;
-    margin: auto;
-
-    @media (max-width: 767px) {
-      max-width: 100vw;
-    }
-     h3{
-       color: #c51100;
-       font-size: 30px;
-       font-weight: 700;
-       text-align: center;
-     }
-    p{
-      color: #212121;
-      font-size: 20px;
-      font-weight: 700;
-      text-align: center;
-    }
-  }
+  position: relative; }
+.banners:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  z-index: 1;
+  height: 100%;
+  left: 0;
+  background: rgba(255, 255, 255, 0.54); }
+.banners-content {
+  z-index: 34;
+  max-width: 40vw;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.744);
+  border-radius: 10px;
+  margin: auto; }
+@media (max-width: 767px) {
+  .banners-content {
+    max-width: 100vw; } }
+.banners-content h3 {
+  color: #c51100;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center; }
+.banners-content p {
+  color: #212121;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center; }
+.top-header {
+  padding: 10px 0;
+  background: #FF324D;
+  color: white;
+  transition: all 0.5s ease-in-out;
 }
-.abouts{
-  padding:50px 0;
-  &-item{
 
-  }
-}
-.category-menu .megamenu-custom{
-  width: 8vw;
-  a{
-    display: inline-flex;
-    color: #000000;
-    font-size: 13px;
-    text-transform: uppercase;
-  }
+.header-wrap-body.fixed{
+  box-shadow: 0 0 5px rgba(0,0,0,0.15);
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 1041;
+  width: 100%;
+  background: white;
+  -webkit-animation: slideInDown 0.65s cubic-bezier(0.23, 1, 0.32, 1);
+  -moz-animation: slideInDown 0.65s cubic-bezier(0.23, 1, 0.32, 1);
+  -o-animation: slideInDown 0.65s cubic-bezier(0.23, 1, 0.32, 1);
+  animation: slideInDown 0.65s cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-animation-fill-mode: none;
+  -moz-animation-fill-mode: none;
+  -o-animation-fill-mode: none;
+  animation-fill-mode: none;
 }

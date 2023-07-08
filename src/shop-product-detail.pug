@@ -1,0 +1,189 @@
+extends includes/layouts/Guest
+
+block pages
+    include includes/containers/breadcrumb/breadcrumb
+    .section
+        .container
+            .row
+                .col-xl-9.col-lg-8
+                    .row
+                        .col-lg-6.col-md-6.mb-4.mb-md-0
+                            .product-image
+                                .product_img_box
+                                    img#product_img(src='https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-an-do-60x120-asphalt-br-qrc.jpg' data-zoom-image='https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-an-do-60x120-asphalt-br-qrc.jpg' alt='product_img1')
+                                    a.product_img_zoom(href='#' title='Zoom')
+                                        span.linearicons-zoom-in
+                                #pr_item_gallery.product_gallery_item.slick_slider(data-slides-to-show='4' data-slides-to-scroll='1' data-infinite='false')
+                                    .item
+                                        a.product_gallery_item.active(href='#' data-image='https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-an-do-60x120-asphalt-br-qrc.jpg' data-zoom-image='https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-an-do-60x120-asphalt-br-qrc.jpg')
+                                            img(src='https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-an-do-60x120-asphalt-br-qrc-300x300.jpg' alt='product_small_img1')
+                                    .item
+                                        a.product_gallery_item(href='#' data-image='https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-an-do-60x120-asphalt-br-1.jpg' data-zoom-image='https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-an-do-60x120-asphalt-br-1.jpg')
+                                            img(src='https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-an-do-60x120-asphalt-br-1-300x300.jpg' alt='product_small_img2')
+                        .col-lg-6.col-md-6
+                            .pr_detail
+                                .product_description
+                                    h4.product_title
+                                        a(href='#') Gạch Ốp Lát Ấn Độ 60×120 Asphalt Br
+                                    .product_price
+                                        span.price 560.000₫ /m2
+                                        //del $55.25
+                                        //.on_sale
+                                        //    span 35% Off
+                                    //.rating_wrap
+                                    //    .rating
+                                    //        .product_rate(style='width:80%')
+                                    //    span.rating_num (21)
+                                    .pr_desc
+                                        p
+                                            | Bề mặt: Men Bóng- Siêu Bóng – Chống xước, chống bám bẩn và chống nấm mốc
+                                        p Kích thước: 60×120 cm
+                                        p Xuất xứ: Nhập khẩu Ấn Độ
+                                        p Ứng dụng: Lát nền, Ốp tường, Sàn
+                                    .product_sort_info
+                                        ul
+                                            li
+                                                i.linearicons-shield-check
+                                                |  Vận chuyển miễn phí
+                                            li
+                                                i.linearicons-sync
+                                                |  Cam kết chính hãng
+                                            li
+                                                i.linearicons-bag-dollar
+                                                |  Showroom 5 tầng tại:
+                                                | 66 Lạc Trung, Hà Nội
+
+                                hr
+                                .cart_extra
+                                    .cart-product-quantity
+                                        .quantity
+                                            input.minus(type='button' value='-')
+                                            input.qty(type='text' name='quantity' value='1' title='Qty' size='4')
+                                            input.plus(type='button' value='+')
+                                    .cart_btn.mt-2
+                                        button.btn.btn-fill-out.btn-addtocart(type='button')
+                                            i.icon-basket-loaded
+                                            |  Thêm vào giỏ hàng
+                                    .cart_btn.mt-2
+                                        button.btn.btn-facebook(type='button' style="color:white")
+                                            |  Báo giá công trình
+                                hr
+                                ul.product-meta
+                                    li
+                                        | Liên hệ để có Giá ưu đãi hơn:
+                                        p
+                                            a(href='#') 0911 441 066  -  0981 306 450  -  024 3632 0280
+                .row
+                    .col-12
+                        .tab-style3
+                            ul.nav.nav-tabs(role='tablist')
+                                li.nav-item
+                                    a#Description-tab.nav-link.active(data-toggle='tab' href='#Description' role='tab' aria-controls='Description' aria-selected='true') Mô tả
+                                li.nav-item
+                                    a#Additional-info-tab.nav-link(data-toggle='tab' href='#Additional-info' role='tab' aria-controls='Additional-info' aria-selected='false') Thông tin bổ sung
+                                //li.nav-item
+                                //    a#Reviews-tab.nav-link(data-toggle='tab' href='#Reviews' role='tab' aria-controls='Reviews' aria-selected='false') Showroom
+                            .tab-content.shop_info_tab
+                                #Description.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='Description-tab')
+                                    p
+                                        | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Vivamus bibendum magna Lorem ipsum dolor sit amet,
+                                        | consectetur adipiscing elit.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                                    p
+                                        | At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt
+                                        | in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+                                #Additional-info.tab-pane.fade(role='tabpanel' aria-labelledby='Additional-info-tab')
+                                    table.table.table-bordered
+                                        tr
+                                            td Capacity
+                                            td 5 Kg
+                                        tr
+                                            td Color
+                                            td Black, Brown, Red,
+                                        tr
+                                            td Water Resistant
+                                            td Yes
+                                        tr
+                                            td Material
+                                            td Artificial Leather
+                    .row
+                        .col-12
+                            .small_divider
+                            .divider
+                            .medium_divider
+                .row
+                    .col-12
+                        .heading_s1
+                            h3 Sản phẩm cùng danh mục
+                        .releted_product_slider.carousel_slider.owl-carousel.owl-theme(data-margin='20' data-responsive='{"0":{"items": "1"}, "481":{"items": "2"}, "768":{"items": "3"}, "1199":{"items": "4"}}')
+                            .item
+                                .product
+                                    .product_img
+                                        a(href='shop-product-detail.html')
+                                            img(src='https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-an-do-60x120-asphalt-br-qrc-300x300.jpg' alt='product_img1')
+
+                                    .product_info
+                                        h6.product_title
+                                            a(href='shop-product-detail.html') Gạch Ốp Lát Ấn Độ 60×120 Asphalt Br
+                                        .product_price
+                                            span.price 560.000đ/m2
+                                            //del $55.25
+                                            //.on_sale
+                                            //    span 35% Off
+                            .item
+                                .product
+                                    .product_img
+                                        a(href='shop-product-detail.html')
+                                            img(src='https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-an-do-60x120-asphalt-br-qrc-300x300.jpg' alt='product_img1')
+
+                                    .product_info
+                                        h6.product_title
+                                            a(href='shop-product-detail.html') Gạch Ốp Lát Ấn Độ 60×120 Asphalt Br
+                                        .product_price
+                                            span.price 560.000đ/m2
+                                            //del $55.25
+                                            //.on_sale
+                                            //    span 35% Off
+                            .item
+                                .product
+                                    .product_img
+                                        a(href='shop-product-detail.html')
+                                            img(src='https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-an-do-60x120-asphalt-br-qrc-300x300.jpg' alt='product_img1')
+
+                                    .product_info
+                                        h6.product_title
+                                            a(href='shop-product-detail.html') Gạch Ốp Lát Ấn Độ 60×120 Asphalt Br
+                                        .product_price
+                                            span.price 560.000đ/m2
+                                            //del $55.25
+                                            //.on_sale
+                                            //    span 35% Off
+                            .item
+                                .product
+                                    .product_img
+                                        a(href='shop-product-detail.html')
+                                            img(src='https://gachtot.vn/wp-content/uploads/2023/07/gach-op-lat-an-do-60x120-asphalt-br-qrc-300x300.jpg' alt='product_img1')
+
+                                    .product_info
+                                        h6.product_title
+                                            a(href='shop-product-detail.html') Gạch Ốp Lát Ấn Độ 60×120 Asphalt Br
+                                        .product_price
+                                            span.price 560.000đ/m2
+                                            //del $55.25
+                                            //.on_sale
+                                            //    span 35% Off
+                .col-xl-3.col-lg-4.order-lg-first.mt-4.pt-2.mt-lg-0.pt-lg-0
+                    .sidebar
+                        .widget
+                            h5.widget_title Sản phẩm mới
+                            ul.widget_recent_post
+                                each item in [1,2,3,4,5]
+                                    li
+                                        .post_img
+                                            a(href='#')
+                                                img(src='https://gachtot.vn/wp-content/uploads/2023/07/gach-trung-quoc-90x180-TQ18928-qrc-300x300.jpg' alt='shop_small1')
+                                        .post_content
+                                            h6.product_title
+                                                a(href='shop-product-detail.html') Gạch Ốp Lát 90×180 Trung Quốc TQ18928
+                                            .product_price
+                                                span.price 750.000₫ /m2
+                                                //del $95.00

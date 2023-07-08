@@ -1,13 +1,15 @@
-// breadcrumb-area
-section.breadcrumb-area-three.breadcrumb-bg
+.breadcrumb_section.bg_gray.page-title-mini
     .container
-        .row
-            .col-lg-12
-                .breadcrumb-content.text-center
-                    h2.title Product
-                    nav(aria-label='breadcrumb')
-                        ol.breadcrumb
-                            li.breadcrumb-item
-                                a(href='/') Home
-                            li.breadcrumb-item.active(aria-current='page') Product
-// breadcrumb-area-end
+        // STRART CONTAINER
+        .row.align-items-center
+            .col-md-6
+                .page-title
+                    h1 Product Detail
+            .col-md-6
+                ol.breadcrumb.justify-content-md-end
+                    li.breadcrumb-item
+                        a(href='#') Home
+                    li.breadcrumb-item
+                        a(href='#') Pages
+                    li.breadcrumb-item.active Product Detail
+

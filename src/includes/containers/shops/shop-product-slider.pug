@@ -1,0 +1,14 @@
+.section.pb_20
+    .container
+        .row.justify-content-center
+            .col-md-6
+                .heading_s4.text-center
+                    h2 Sản phẩm bán chạy
+                p.text-center.leads
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim Nullam nunc varius.
+        .row
+            .col-md-12
+                .product_slider.carousel_slider.owl-carousel.owl-theme.nav_style5(data-loop='true' data-dots='false' data-nav='true' data-margin='30' data-responsive='{"0":{"items": "1"}, "481":{"items": "2"}, "768":{"items": "3"}, "1199":{"items": "4"}}')
+                    each item in [1,2,3,4,5,6]
+                        .item
+                            include ../../components/shop/product-item

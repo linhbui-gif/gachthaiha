@@ -1,126 +1,162 @@
 @font-face {
-    font-family: "flaticon";
-    src: url("../fonts/flaticon.eot");
-    src: url("../fonts/flaticond41d.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/flaticon.woff2") format("woff2"),
-    url("../fonts/flaticon.woff") format("woff"),
-    url("../fonts/flaticon.ttf") format("truetype"),
-    url("../fonts/flaticon.svg#Flaticon") format("svg");
-}
-
-i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
-    font-family: flaticon !important;
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.eot");
+    src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/Flaticon.woff2") format("woff2"), url("../fonts/Flaticon.woff") format("woff"), url("../fonts/Flaticon.ttf") format("truetype"), url("../fonts/Flaticon.svg#Flaticon") format("svg");
+    font-weight: normal;
     font-style: normal;
-    font-weight: normal !important;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
-.flaticon-telegram:before {
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: "Flaticon";
+        src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+    }
+}
+
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+    font-family: "Flaticon";
+    font-style: normal;
+}
+
+.flaticon-shipped:before {
+    content: "\f100";
+}
+
+.flaticon-money-back:before {
     content: "\f101";
 }
-.flaticon-lion-head:before {
+
+.flaticon-support:before {
     content: "\f102";
 }
-.flaticon-check:before {
+
+.flaticon-woman:before {
     content: "\f103";
 }
-.flaticon-telephone:before {
+
+.flaticon-boss:before {
     content: "\f104";
 }
-.flaticon-love:before {
+
+.flaticon-friendship:before {
     content: "\f105";
 }
-.flaticon-shopping-bag:before {
+
+.flaticon-sunglasses:before {
     content: "\f106";
 }
-.flaticon-user:before {
+
+.flaticon-jacket:before {
     content: "\f107";
 }
-.flaticon-search:before {
+
+.flaticon-sneakers:before {
     content: "\f108";
 }
-.flaticon-make-up:before {
+
+.flaticon-watch:before {
     content: "\f109";
 }
-.flaticon-next:before {
+
+.flaticon-necklace:before {
     content: "\f10a";
 }
-.flaticon-smartphone:before {
+
+.flaticon-herbal:before {
     content: "\f10b";
 }
-.flaticon-rim:before {
+
+.flaticon-ball:before {
     content: "\f10c";
 }
-.flaticon-sofa:before {
+
+.flaticon-pijamas:before {
     content: "\f10d";
 }
-.flaticon-ball:before {
+
+.flaticon-scarf:before {
     content: "\f10e";
 }
-.flaticon-plug:before {
+
+.flaticon-vintage:before {
     content: "\f10f";
 }
-.flaticon-headphone:before {
+
+.flaticon-pregnant:before {
     content: "\f110";
 }
-.flaticon-agronomy:before {
+
+.flaticon-lock:before {
     content: "\f111";
 }
-.flaticon-shoe:before {
+
+.flaticon-bed:before {
     content: "\f112";
 }
-.flaticon-necklace:before {
+
+.flaticon-table:before {
     content: "\f113";
 }
-.flaticon-diamond:before {
+
+.flaticon-armchair:before {
     content: "\f114";
 }
-.flaticon-shopping-bag-1:before {
+
+.flaticon-desk-lamp:before {
     content: "\f115";
 }
-.flaticon-shipping:before {
+
+.flaticon-sofa:before {
     content: "\f116";
 }
-.flaticon-smartwatch:before {
+
+.flaticon-chair:before {
     content: "\f117";
 }
-.flaticon-processor:before {
+
+.flaticon-tv:before {
     content: "\f118";
 }
-.flaticon-kitchen-utensils:before {
+
+.flaticon-responsive:before {
     content: "\f119";
 }
-.flaticon-lamp:before {
+
+.flaticon-camera:before {
     content: "\f11a";
 }
-.flaticon-high-heels:before {
+
+.flaticon-plugins:before {
     content: "\f11b";
 }
-.flaticon-shoe-1:before {
+
+.flaticon-headphones:before {
     content: "\f11c";
 }
-.flaticon-running:before {
+
+.flaticon-console:before {
     content: "\f11d";
 }
-.flaticon-high-heels-1:before {
+
+.flaticon-music-system:before {
     content: "\f11e";
 }
-.flaticon-sport-equipment:before {
+
+.flaticon-monitor:before {
     content: "\f11f";
 }
-.flaticon-plus:before {
+
+.flaticon-printer:before {
     content: "\f120";
 }
-.flaticon-maths:before {
+
+.flaticon-fax:before {
     content: "\f121";
 }
-.flaticon-logo:before {
+
+.flaticon-mouse:before {
     content: "\f122";
-}
-.flaticon-shield:before {
-    content: "\f123";
 }

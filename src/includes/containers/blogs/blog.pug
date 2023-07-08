@@ -1,17 +1,12 @@
-// blog-area
-section.blog-area.pt-55.pb-60
+.section.small_pt.pb_70
     .container
-        .row.mb-40
-            .col-lg-6.col-md-6
-                .section-title
-                    h2.title TIN TỨC MỚI
-            .col-lg-6.col-md-6
-                .view-btn.text-end
-                    a(href='blog.html')
-                        | Xem tất cả bài viết
-                        i.fa-solid.fa-angle-right
+        .row.justify-content-center
+            .col-lg-6.col-md-8
+                .heading_s1.text-center
+                    h2 Tin tức mới
+                p.leads.text-center
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
         .row.justify-content-center
             each item in [1,2,3,4,5,6]
-                .col-xl-4.col-lg-6.col-md-6.col-sm-9
-                    include ../../components/blogs/blog-item.pug
-// blog-area-end
+                .col-lg-4.col-md-6
+                   include ../../components/blogs/blog-item

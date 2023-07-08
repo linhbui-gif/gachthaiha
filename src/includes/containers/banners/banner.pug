@@ -1,60 +1,26 @@
-// banner-area
-section.banner-area.pt-20
-    .banner-shape
-    .container
-        .row.justify-content-end
-            .col-xl-9
-                .row.align-items-center
-                    .col-lg-6.order-0.order-lg-2
-                        .banner-img
-                            img(src='assets/img/banner/banner_img.png' alt='')
-                            //.product-tooltip
-                            //    .tooltip-btn
-                            //    .tooltip-product-item.product-tooltip-item.left
-                            //        .close-btn
-                            //            i.fa-solid.fa-xmark
-                            //        .tooltip-product-thumb
-                            //            a(href='shop-details.html')
-                            //                img(src='assets/img/product/tooltip_img.jpg' alt='')
-                            //        .tooltip-product-content
-                            //            h5.title
-                            //                a(href='shop-details.html')
-                            //                    | Watch $29.08
-                            //                    span -35%
-                            //            p.order 05 orders
-                            //.product-tooltip
-                            //    .tooltip-btn
-                            //    .tooltip-product-item.product-tooltip-item.bottom.left
-                            //        .close-btn
-                            //            i.fa-solid.fa-xmark
-                            //        .tooltip-product-thumb
-                            //            a(href='shop-details.html')
-                            //                img(src='assets/img/product/tooltip_img02.jpg' alt='')
-                            //        .tooltip-product-content
-                            //            h5.title
-                            //                a(href='shop-details.html')
-                            //                    | Watch $25.08
-                            //                    span -40%
-                            //            p.order 03 orders
-                            //.product-tooltip
-                            //    .tooltip-btn
-                            //    .tooltip-product-item.product-tooltip-item
-                            //        .close-btn
-                            //            i.fa-solid.fa-xmark
-                            //        .tooltip-product-thumb
-                            //            a(href='shop-details.html')
-                            //                img(src='assets/img/product/tooltip_img.jpg' alt='')
-                            //        .tooltip-product-content
-                            //            h5.title
-                            //                a(href='shop-details.html')
-                            //                    | Watch $29.08
-                            //                    span -35%
-                            //            p.order 05 orders
-                    .col-lg-6
-                        .banner-content
-                            h2.title
-                                span GẠCH ỐP LÁT
-                            h5.price
-                                span kHO GẠCH TRÊN 1000 MẪU
-                            //a.btn(href='shop.html') Shop Now
-// banner-area-end
+// START SECTION BANNER
+.banner_section.slide_medium.shop_banner_slider.staggered-animation-wrap
+    #carouselExampleControls.carousel.slide.carousel-fade.light_arrow(data-ride='carousel')
+        .carousel-inner
+            .carousel-item.active.background_bg(data-img-src='https://gachtot.vn/wp-content/uploads/2021/12/gach-op-lat-hoang-mai-gachtot.jpg')
+                .banner_slide_content
+                    .container
+                        .row
+                            .col-lg-6
+                                .banner_content.overflow-hidden
+                                    //h5.mb-3.staggered-animation.font-weight-light(data-animation='slideInLeft' data-animation-delay='0.5s') Gạch ốp lát
+                                    //h3.staggered-animation(data-animation='slideInLeft' data-animation-delay='1s') Kho gạch trên 1000 mẫu
+            .carousel-item.background_bg(data-img-src='https://gachtot.vn/wp-content/uploads/2021/12/gach-op-lat-hoang-mai-gachtot.jpg')
+                .banner_slide_content
+                    .container
+                        // STRART CONTAINER
+                        .row
+                            .col-lg-6
+                                .banner_content.overflow-hidden
+                                    //h5.mb-3.staggered-animation.font-weight-light(data-animation='slideInLeft' data-animation-delay='0.5s') Gạch ốp lát
+                                    //h3.staggered-animation(data-animation='slideInLeft' data-animation-delay='1s') Kho gạch trên 1000 mẫu
+        a.carousel-control-prev(href='#carouselExampleControls' role='button' data-slide='prev')
+            i.ion-chevron-left
+        a.carousel-control-next(href='#carouselExampleControls' role='button' data-slide='next')
+            i.ion-chevron-right
+// END SECTION BANNER
